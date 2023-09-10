@@ -1,40 +1,40 @@
 body {
-    background-color:rgb(35, 29, 75);
+    background-color:rgb(237, 233, 209);
     margin: 2%;
     padding: 2%;
 }
 h1 {
-    color: rgb(172, 203, 231);
+    color: rgb(80, 60, 37);
     font-family: Courier;
     font-size: 200%;
 }
 h2 {
-    color:cornflowerblue;
+    color:rgb(103, 81, 39);
     font-family: Courier;
     font-size: 150%;
 }
 h3 {
-    color: deepskyblue;
+    color: rgb(95, 71, 35);
     font-family: Courier;
     font-size: 150%;
 }
 h4 {
-    color:aquamarine;
+    color:rgb(30, 83, 65);
     font-family: Courier;
     font-size: 120%;
 }
 h5 {
-    color:antiquewhite;
+    color:rgb(85, 70, 49);
     font-family: Courier;
     font-size: 120%;
 }
 h6 {
-    color:honeydew;
+    color:rgb(44, 77, 44);
     font-family: Courier;
     font-size: 110%;
 }
 p {
-    color:aliceblue;
+    color:rgb(27, 18, 11);
     font-family: Courier;
     font-size: 100%;
 }
