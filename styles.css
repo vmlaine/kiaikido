@@ -62,3 +62,23 @@ a:hover {
     font-family: Courier;
     font-size: 110%;
 }
+a.nav:link {
+    color:rgb(31, 72, 54);
+    font-family: Courier;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 110%;
+}
+a.nav:visited {
+    color:rgb(42, 32, 62);
+    font-family: Courier;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 110%;
+}
+a.nav:hover {
+    color:rgb(75, 154, 136);
+    font-family: Courier;
+    font-weight: bold;
+    font-size: 110%;
+}
