@@ -7,9 +7,37 @@ html {
 
 body {
     padding-top: 15%;
-    padding-left:  2%;
-    padding-right: 2%;
+ /*   padding-left:  2%;
+    padding-right: 2%; */
 }
+
+
+body nav {
+    position: sticky;
+    background-color: rgb(237, 233, 209);
+    top: 0;
+}
+
+ul {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    box-sizing: border-box;
+ /*   padding: 20px;*/
+    background: rgb(237, 233, 209);
+  }
+  li {
+    list-style: none;
+    margin-right: 20px;
+    font-family: Courier;
+    font-size: 110%;
+    font-weight: bold;
+  }
+  li a {
+    text-decoration: none;
+    color: rgb(157, 157, 157);
+  }
+
 h1 {
     color: rgb(80, 60, 37);
     font-family: Courier;
@@ -57,28 +85,30 @@ a:visited {
     text-decoration: none;
     font-size: 110%;
 }
+/*
 a:hover {
     color:rgb(75, 154, 136);
     font-family: Courier;
     font-size: 110%;
 }
 a.nav:link {
-    color:rgb(31, 72, 54);
+    color:rgb(255, 255, 255);
     font-family: Courier;
     font-weight: bold;
     text-decoration: none;
     font-size: 110%;
 }
 a.nav:visited {
-    color:rgb(42, 32, 62);
+    color:rgb(255, 255, 255);
     font-family: Courier;
     font-weight: bold;
     text-decoration: none;
     font-size: 110%;
 }
 a.nav:hover {
-    color:rgb(75, 154, 136);
+    color:rgb(62, 255, 210);
     font-family: Courier;
     font-weight: bold;
     font-size: 110%;
 }
+*/
