@@ -20,17 +20,9 @@ body nav {
     border-bottom: double;
     border-color: rgb(204, 200, 178);
     border-width: 7px;
-    
-    padding-bottom: 60px;
+    padding-bottom: 72px;
 }
-/*a {
-    text-decoration: none;
-  }
-  
-    nav {
-    font-family: Courier;
-  }
-  */
+
   ul {
     background: rgb(237, 233, 209);
     list-style: none;
@@ -41,6 +33,9 @@ body nav {
   li {
     color: #000000;
     background: rgb(237, 233, 209);
+    border: double;
+    border-color: rgb(204, 200, 178);
+    border-width: 7px;
     display: block;
     float: left;
     padding: 1rem;
@@ -54,7 +49,7 @@ body nav {
   }
   
   li:hover {
-    background: red;
+    background: rgb(122, 119, 100);
     cursor: pointer;
   }
   
@@ -81,27 +76,6 @@ body nav {
     clear: both;
     width: 100%;
   }
-/* ul {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    box-sizing: border-box;
-    padding-left: 2%;
-    padding-right: 2%;
-    background: rgb(237, 233, 209);
-  }
-  li {
-    list-style: none;
-    margin-right: 20px;
-    font-size: 110%;
-    font-weight: bold;
-    white-space: nowrap;
-  }
-  li a {
-    text-decoration: none;
-    color: rgb(157, 157, 157);
-  }
-  */
 
 h1 {
     color: rgb(61, 44, 24);
