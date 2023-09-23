@@ -125,7 +125,32 @@ a.nav:hover {
     color:rgb(118, 118, 118);
     font-family: Courier;
     font-weight: bold;
+    text-decoration: none;
     font-size: 110%;
+}
+a.enempi:link {
+    color:rgb(20, 33, 17);
+    font-family: Courier;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 100%;
+    padding-left: 5%;
+}
+a.enempi:visited {
+    color:rgb(20, 33, 17);
+    font-family: Courier;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 100%;
+    padding-left: 5%;
+}
+a.enempi:hover {
+    color:rgb(53, 87, 45);
+    font-family: Courier;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 100%;
+    padding-left: 5%;
 }
 img.sensei {
     float:right;
