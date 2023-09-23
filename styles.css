@@ -90,6 +90,10 @@ p {
     padding-right: 5%;
 
 }
+div.taitaja {
+    border:double;
+    border-color: rgb(61, 44, 24);
+}
 a:link {
     color:rgb(31, 72, 54);
     font-family: Courier;
