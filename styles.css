@@ -87,6 +87,7 @@ body nav {
 h1 {
     color: rgb(61, 44, 24);
     font-family: Courier;
+    display:inline-block;
     font-size: 200%;
     padding-left: 5%;
     padding-right: 5%;
@@ -94,10 +95,16 @@ h1 {
 h1.jap {
   color: rgb(61, 44, 24);
   font-family: 'Noto Sans JP', sans-serif;
+  display:inline-block;
   font-size: 200%;
   padding-left: 5%;
   padding-right: 5%;
   float:right;
+}
+@media only screen and (max-width: 440px) {
+  #jap {
+      display: none;
+  }
 }
 h2 {
     color:rgb(61, 44, 24);
@@ -160,8 +167,9 @@ img.taitaja {
 }
 img.sensei {
     float: right;
-    width: 400px;
-    height: 400px;
+    width: 30%;
+    height: auto;
+    min-width: 250px;
     padding: 20px;
     padding-left: 5%;
     padding-right: 5%;
