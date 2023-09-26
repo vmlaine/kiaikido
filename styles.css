@@ -91,6 +91,14 @@ h1 {
     padding-left: 5%;
     padding-right: 5%;
 }
+h1.jap {
+  color: rgb(61, 44, 24);
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 200%;
+  padding-left: 5%;
+  padding-right: 5%;
+  float:right;
+}
 h2 {
     color:rgb(61, 44, 24);
     font-family: Courier;
@@ -132,7 +140,6 @@ p {
     font-size: 100%;
     padding-left: 5%;
     padding-right: 5%;
-
 }
 div.taitaja {
     border-top: double;
@@ -223,9 +230,16 @@ a.enempi:hover {
     font-size: 100%;
     padding-left: 5%;
 }
+p.footer {
+  color:rgb(255, 255, 255);
+  font-family: Courier;
+  font-size: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
 footer {
     text-align: center;
     background-color: rgb(0, 0, 0);
     font-family: Courier;
-    color: white;
+    margin-top: 10%;
   }
