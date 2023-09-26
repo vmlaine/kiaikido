@@ -16,6 +16,8 @@ body nav {
     position: sticky;
     top: 0;
     background-color: rgb(237, 233, 209);
+    background-image: url("navtausta.png");
+    background-size: auto 70px;
     border-top: double;
     border-bottom: double;
     border-color: rgb(204, 200, 178);
@@ -82,17 +84,6 @@ body nav {
     opacity: 1;
     display: block;
   }
-  ul li ul li:hover > ul li ul,
-  ul li ul li:focus-within > ul li ul,
-  ul li ul li ul:hover {
-    visibility: visible;
-    opacity: 1;
-    display: block;
-  }
-  ul li ul li ul li {
-    clear: both;
-    width: 100%;
-  }
 h1 {
     color: rgb(61, 44, 24);
     font-family: Courier;
@@ -146,7 +137,8 @@ p {
 div.taitaja {
     border-top: double;
     border-bottom: double;
-    border-color: rgb(204, 200, 178);
+    border-color: rgb(154, 150, 133);
+    background-color: rgb(231, 225, 199);
     border-width: 7px;
 }
 img.taitaja {
