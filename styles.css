@@ -112,14 +112,14 @@ h1.jap {
 h2 {
     color:rgb(61, 44, 24);
     font-family: Courier;
-    font-size: 150%;
+    font-size: 160%;
     padding-left: 5%;
     padding-right: 5%;
 }
 h3 {
     color: rgb(61, 44, 24);
     font-family: Courier;
-    font-size: 150%;
+    font-size: 140%;
     padding-left: 5%;
     padding-right: 5%;
 }
@@ -133,7 +133,7 @@ h4 {
 h5 {
     color:rgb(61, 44, 24);
     font-family: Courier;
-    font-size: 120%;
+    font-size: 110%;
     padding-left: 5%;
     padding-right: 5%;
 }
