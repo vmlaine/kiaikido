@@ -98,6 +98,7 @@ h1 {
     font-size: 200%;
     padding-left: 5%;
     padding-right: 5%;
+    padding-top: 2%;
 }
 h1.jap {
   color: rgb(61, 44, 24);
@@ -107,6 +108,12 @@ h1.jap {
   padding-right: 5%;
   float: right;
 }
+@media only screen and (max-width: 440px) {
+  #jap {
+    display: none;
+  }    
+}
+
 
 h2 {
     color:rgb(61, 44, 24);
@@ -177,6 +184,76 @@ div.ki {
     text-align: center;
     height: auto;
 }
+
+/*Sensei-Grid*/
+.sensei-item1 { 
+    grid-area: text;
+    text-align: left;
+}
+.sensei-item2 {
+    grid-area: link;
+    text-align: center;
+}
+.sensei-item3 {
+    grid-area: image;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.senseigrid {
+  display: grid;
+  grid-template-areas:
+    'text text text image image'
+    'text text text image image'
+    'link link link image image';
+  gap: 30px;
+  background-color: inherit;
+  padding: inherit;
+  margin: inherit;
+}
+
+.senseigrid > div {
+  background-color: inherit;
+  text-align: left;
+  padding: 2%;
+}
+
+@media only screen and (max-width: 1100px) {
+  .sensei-item1 { grid-area: 2 / 1 / 2 / span 5; }
+  .sensei-item2 { grid-area: 3 / 1 / 3 / span 5; }
+  .sensei-item3 { grid-area: 1 / 1 / 1 / span 5; }
+}
+
+/*Ki-Grid*/
+.ki-item1 { grid-area: text; }
+.ki-item2 { grid-area: link; }
+.ki-item3 { grid-area: image; }
+
+.kigrid {
+  display: grid;
+  grid-template-areas:
+    'image text text text text'
+    'image text text text text'
+    'image link link link link';
+  gap: 30px;
+  background-color: inherit;
+  padding: inherit;
+  margin: inherit;
+}
+
+.kigrid > div {
+  background-color: inherit;
+  text-align: left;
+  padding: 2%;
+}
+
+@media only screen and (max-width: 600px) {
+  .ki-item1 { grid-area: 2 / 1 / 2 / span 5; }
+  .ki-item2 { grid-area: 3 / 1 / 3 / span 5; }
+  .ki-item3 { grid-area: 1 / 1 / 1 / span 5; }
+}
+
 img.taitaja {
     float:left;
     width: 30%;
@@ -191,8 +268,7 @@ img.taitaja {
     border-width: 7px;
 }
 img.sensei {
-    float: right;
-    width: 30%;
+    width: 80%;
     height: auto;
     padding: 2%;
     margin-top: 3%;
@@ -202,13 +278,33 @@ img.sensei {
     border: double;
     border-color: rgb(154, 150, 133);
     border-width: 7px;
+    min-width: 350px;
+    max-width: 550px;
 }
+@media only screen and (max-width: 600px) {
+  img.sensei {
+    min-width: auto;
+}
+}
+
 img.historia {
     float: right;
-    width: 15%;
+    width: 20%;
     height: auto;
     padding: 2%;
     margin: 3%;
+}
+img.ki {
+    float: left;
+    width: 100%;
+    height: auto;
+    padding: 5%;
+    max-width: 250px;
+}
+@media only screen and (max-width: 600px) {
+  img.ki {
+    min-width: auto;
+}
 }
 a:link {
     color:rgb(31, 72, 54);
@@ -287,13 +383,4 @@ footer {
     margin-top: 10%;
     padding-top: 10px;
     padding-bottom: 10px;
-}
-@media only screen and (max-width: 440px) {
-  #jap {
-    display: none;
-  }
-  img.sensei {
-    display: none;
-  }
-    
 }
