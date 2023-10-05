@@ -16,14 +16,14 @@
             <ul>
                 <li><a class="nav" href="index.html"><img src="Ki_pieni.png" alt="Ki navigointi" width="auto" height="52" title="Pääsivu"></img></a></li>
                 <li><a class="nav" href="#"><img src="logo_aikido.png" alt="Aikidon suuntaukset ja Ki" width="auto" height="52"></a>
-                    <ul class="dropdown">
+                    <ul aria-label="submenu">
                         <li><a class="nav" href="erot.html">Ki-Aikidon ja Aikidon erot</a></li>
                         <li><a class="nav" href="suuntaukset.html">Aikidon suuntaukset</a></li>
                         <li><a class="nav" href="ki.html">Ki</a></li>
-                    </ul>
+                    </ul aria-label="submenu">
                 </li>
                 <li><a class="nav" href="#"><img src="logo_japanilaiset.png" alt="Ihmiset" width="auto" height="52"></a>
-                    <ul class="dropdown">
+                    <ul aria-label="submenu">
                         <li><a class="nav" href="taitajat.html">Henkilöesittelyt</a></li>
                         <li><a class="nav" href="taitajat.html#tohei">Koichi Tohei</a></li>
                         <li><a class="nav" href="taitajat.html#ueshiba">Morihei Ueshiba</a></li>
@@ -36,20 +36,20 @@
                     </ul>
                 </li>
                 <li><a class="nav" href="#"><img src="logo_historia.png" alt="Ki-Aikidon historia" width="auto" height="52"></a>
-                    <ul class="dropdown">
+                    <ul aria-label="submenu">
                         <li><a class="nav" href="historia.html">Ki-Aikidon historia</a></li>
                     </ul>
                 </li>
                 <li><a class="nav" href="#"><img src="logo_video.png" alt="Linkit ja videot" widt="auto" height="52"></a>
-                    <ul class="dropdown">
+                    <ul aria-label="submenu">
                         <li><a class="nav" href="linkit.html">Linkkejä</a></li>
                         <li><a class="nav" href="videot.html">Videoita</a></li>
                     </ul>
                 </li>
             </ul>
           </nav>
-    <h1>Henkilöesittelyt</h1>
-    <div class="taitaja" id="tohei">
+    <h1 id="tohei">Henkilöesittelyt</h1>
+    <div class="taitaja">
         <div>
             <img class="taitaja" src="tohei_ai01.png" alt="Koichi Tohei">
         </div>
@@ -71,11 +71,11 @@
                 organisaationsa, Ki Society (Shin Shin Toitsu Aikido), joka on omistautunut Ki-aikidon ja henkisen kehityksen opettamiseen.
                 Hänen perintönsä elää edelleen Aikido-yhteisössä.
             </p>
-            <p style="clear:both"></p>
+            <p id="ueshiba" style="clear:both"></p>
         </div>
     </div>
     <br>
-    <div class="taitaja" id="ueshiba">
+    <div class="taitaja">
         <div>
             <img class="taitaja" src="ueshiba_ai01.png" alt="Morihei Ueshiba">
         </div>
@@ -95,7 +95,7 @@
                 vahingoittaa vastustajaa, vaan rauhoittaa tilanne ja hallita konfliktia ilman väkivaltaa. Aikido perustuu liikkeiden
                 sulavuuteen ja vastustajan voiman hyödyntämiseen häntä itseään vastaan.
             </p>
-            <p> O-Sensei Morihei Ueshiba opetti Aikidoa ja sen periaatteita monille oppilaille ja vaikutti suuresti lajin leviämiseen Japanin
+            <p id="kueshiba"> O-Sensei Morihei Ueshiba opetti Aikidoa ja sen periaatteita monille oppilaille ja vaikutti suuresti lajin leviämiseen Japanin
                 ulkopuolelle. Hänen filosofiansa ja opetukset ovat edelleen keskeisiä Aikidon harjoittelussa, ja laji on levinnyt ympäri
                 maailmaa. Morihei Ueshiba kuoli vuonna 1969, mutta hänen perintönsä elää vahvasti Aikido-yhteisössä.
             </p>
@@ -103,7 +103,7 @@
         </div>
     </div>
     <br>
-    <div class="taitaja" id="kueshiba">
+    <div class="taitaja">
         <div>
             <img class="taitaja" src="kueshiba_ai01.png" alt="Kisshomaru Ueshiba">
         </div>
@@ -135,7 +135,7 @@
                 <em>Kansainvälinen levitys:</em> Kisshomaru Ueshiba teki opetusmatkoja ulkomaille edistääkseen Aikidoa maailmanlaajuisesti.
                 Hän oli mukana Aikidon leviämisessä ja tunnetuksi tulemisessa monissa maissa.
             </p>
-            <p> 
+            <p id="gozo"> 
                 Kisshomaru Ueshiba jatkoi isänsä työtä Aikidon edistämiseksi ja kehittämiseksi. Hänestä tuli Aikidon tunnettu ja arvostettu
                 johtaja, ja hänen panoksensa auttoi lajia kasvamaan ja leviämään ympäri maailmaa.
             </p>
@@ -144,7 +144,7 @@
         </div>
     </div>
     <br>
-    <div class="taitaja" id="gozo">
+    <div class="taitaja">
         <div>
             <img class="taitaja" src="shioda_ai01.png" alt="Gozo Shioda">
         </div>
@@ -176,7 +176,7 @@
                 <em>10. dan-arvo:</em> Gozo Shioda saavutti Aikidossa harvinaisen korkean 10. dan -arvon, joka myönnetään vain harvoille
                 ja kokeneille harjoittelijoille.
             </p>
-            <p>   
+            <p id="tomiki">   
                 Gozo Shioda vaikutti merkittävästi Aikidon leviämiseen ja kehitykseen ja jätti pysyvän jäljen Aikido-yhteisöön.
                 Yoshinkan Aikido jatkaa edelleen perinteenä ja koulutuksellisena lähestymistapana Aikidon harjoitteluun.
             </p>
@@ -184,7 +184,7 @@
         </div>
     </div>
     <br>
-    <div class="taitaja" id="tomiki">
+    <div class="taitaja">
         <div>
             <img class="taitaja" src="tomiki_ai01.png" alt="Kenji Tomiki">
         </div>
@@ -218,7 +218,7 @@
                 <em>Opetus ja kirjallinen tuotanto:</em> Kenji Tomiki opetti ja kirjoitti useita kirjoja Judoista ja Aikidosta sekä niiden
                 yhdistämisestä.
             </p>
-            <p>    
+            <p id="saito">    
                 Kenji Tomiki oli merkittävä hahmo taistelulajien maailmassa, ja hänen vaikutuksensa näkyy edelleen Tomiki Aikidon ja Judo
                 Shindo Yoshin koulukunnan harjoittelussa ja opetuksessa.
             </p>
@@ -226,7 +226,7 @@
         </div>
     </div>
     <br>
-    <div class="taitaja" id="saito">
+    <div class="taitaja">
         <div>
             <img class="taitaja" src="saito_ai01.png" alt="Morihiro Saito">
         </div>
@@ -255,7 +255,7 @@
             <p>
                 <em>9. dan-arvo:</em> Hän saavutti Aikidossa korkean 9. dan -arvon.
             </p>
-            <p>
+            <p id="varis">
                 Morihiro Saito vaikutti merkittävästi Aikidon kehitykseen ja perinteen säilyttämiseen. Hänen opetuksensa ja Iwama-ryu
                 Aikido jatkavat edelleen vaikutustaan Aikido-yhteisössä ja tarjoavat mahdollisuuden syvälliseen ja perinteiseen Aikidon
                 harjoitteluun.
@@ -264,7 +264,7 @@
         </div>
     </div>
     <br>
-    <div class="taitaja" id="varis">
+    <div class="taitaja">
         <div>
             <img class="taitaja" src="varis_ai02.png" alt="Rainer Varis">
         </div>
@@ -287,14 +287,14 @@
             <p> <em>Ki-aikidon opettaminen ja edistäminen:</em> Rainer Varis jatkoi Ki-aikidon opettamista ja edistämistä Suomessa, ja hänellä oli
                 merkittävä vaikutus lajin leviämiseen ja kasvuun maassa.
             </p>
-            <p> Rainer Varis oli tärkeä hahmo Ki-aikidon historiassa Suomessa, ja hänen panoksensa auttoi lajia vakiinnuttamaan asemansa
+            <p id="koli"> Rainer Varis oli tärkeä hahmo Ki-aikidon historiassa Suomessa, ja hänen panoksensa auttoi lajia vakiinnuttamaan asemansa
                 suomalaisessa Aikido-yhteisössä.
             </p>
             <p style="clear:both"></p>
         </div>
     </div>
     <br>
-    <div class="taitaja" id="koli">
+    <div class="taitaja">
         <div>
             <img class="taitaja" src="koli_ai01.png" alt="Henkka Koli">
         </div>

@@ -72,7 +72,7 @@ body nav {
     opacity: 0;
     min-width: 5rem;
     position: absolute;
-    transition: all 0.5s ease;
+    transition: all 0.7s ease;
     margin-top: 6px;
     left: 0;
     display: none;
@@ -157,7 +157,7 @@ div.taitaja {
     background-color: rgb(231, 225, 199);
     border-width: 7px;
 }
-div.yhteenveto {
+summary.yhteenveto {
     border: solid;
     border-width: 3px;
     border-color: rgb(161, 174, 156);
