@@ -48,7 +48,7 @@ body nav {
     margin-right: 1px;
     position: relative;
     text-decoration: none;
-    transition-duration: 0.7s; /*CSS-animaatiota ;), eli navigaation feidausefekti*/
+    transition-duration: 2s; /*CSS-animaatiota ;), eli navigaation feidausefekti*/
   }
   li a {
     color: #000000;
@@ -66,7 +66,7 @@ body nav {
     opacity: 0;
     min-width: 5rem;
     position: absolute;
-    transition: all 0.7s ease; /*lisää CSS-animaatiota, eli navigaation feidausefekti ;)*/
+    transition: all 2s ease; /*lisää CSS-animaatiota, eli navigaation feidausefekti ;)*/
     margin-top: 6px;
     left: 0;
     display: none;
