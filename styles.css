@@ -1,17 +1,17 @@
+/* Yläosan kuvan paikka kiinni ylälaitaan ja sivuihin. Näytetään yläreunassa vain kerran. Samalla koko sivun taustavärin määritys */
 html {
     background-image: url("otsikon_tausta1.png");
     background-color:rgb(237, 233, 209);
     background-size: 100%;
     background-repeat:no-repeat;
 }
-
+/* body-elementin padding siten, että laidoissa tilaa ja jättää myös taustakuvan näkyviin */
 body {
     padding-top: 15%;
     padding-left: 5%;
     padding-right: 5%;
 }
-
-
+/* Navigaatio-elementin muotoilu pysymään kiinni bodyn yläosassa, ym. muotoilut */
 body nav {
     position: sticky;
     top: 0;
@@ -27,14 +27,13 @@ body nav {
     padding-top: 2px;
     padding-bottom: 2px;
 }
-
+/* Navigaatio listana, joten kaikki sen sisus muotoillaan tässä */
   ul {
     background: rgb(237, 233, 209);
     list-style: none;
     margin: 0;
     padding-left: 0;
   }
-  
   li {
     color: #000000;
     background: rgb(237, 233, 209);
@@ -49,48 +48,42 @@ body nav {
     margin-right: 1px;
     position: relative;
     text-decoration: none;
-    transition-duration: 0.7s;
+    transition-duration: 0.7s; /*CSS-animaatiota ;), eli navigaation feidausefekti*/
   }
-    
   li a {
     color: #000000;
   }
-  
-  li:hover, li:focus-within {
+  li:hover, li:focus-within { /*Focus-within tarvitaan saavutettavuuden takia, muuten ei tabulaattorilla voi navia selata*/
     background: rgb(122, 119, 100);
     cursor: pointer;
-
   }
-
-  li:focus-within a {
+  li:focus-within a {  /*Focus-within tarvitaan saavutettavuuden takia, muuten ei tabulaattorilla voi navia selata*/
     outline: none;
   }
-  
   ul li ul {
     background: rgb(237, 233, 209);
     visibility: hidden;
     opacity: 0;
     min-width: 5rem;
     position: absolute;
-    transition: all 0.7s ease;
+    transition: all 0.7s ease; /*lisää CSS-animaatiota, eli navigaation feidausefekti ;)*/
     margin-top: 6px;
     left: 0;
     display: none;
   }
-  
   ul li:hover > ul,
-  ul li:focus-within > ul,
+  ul li:focus-within > ul,  /*Focus-within tarvitaan saavutettavuuden takia, muuten ei tabulaattorilla voi navia selata*/
   ul li ul:hover {
     visibility: visible;
     opacity: 1;
     display: block;
   }
-  
   ul li ul li {
     clear: both;
     width: 100%;
   }
 
+/* Kaikkien otsikoiden muotoilut (h1-h6) */
 h1 {
     color: rgb(61, 44, 24);
     font-family: Courier;
@@ -102,19 +95,19 @@ h1 {
 }
 h1.jap {
   color: rgb(61, 44, 24);
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Noto Sans JP', sans-serif; /*Googlen japaninkielinen fontti*/
   font-size: 200%;
   padding-left: 5%;
   padding-right: 5%;
-  float: right;
+  float: right; /*Fiksua laittaa kaksi h1-otsikkoa vierekkäin :)*/
 }
-@media only screen and (max-width: 440px) {
+
+/* Japaninkielinen otsikko katoamaan 460 pikselin kohdalla, ettei mene rumaksi suomenkielisen otsikon kanssa */
+@media only screen and (max-width: 460px) {
   #jap {
     display: none;
   }    
 }
-
-
 h2 {
     color:rgb(61, 44, 24);
     font-family: Courier;
@@ -150,6 +143,8 @@ h6 {
     padding-left: 5%;
     padding-right: 5%;
 }
+
+/* Tekstikappaleiden muotoilu */
 p {
     color:rgb(27, 18, 11);
     font-family: Courier;
@@ -157,6 +152,8 @@ p {
     padding-left: 5%;
     padding-right: 5%;
 }
+
+/* Bodyn sisällä olevan sisältöosion muotoilu */
 div.taitaja {
     border-top: double;
     border-bottom: double;
@@ -164,6 +161,8 @@ div.taitaja {
     background-color: rgb(231, 225, 199);
     border-width: 7px;
 }
+
+/* Yhteenvetolaatikon muotoilu */
 summary.yhteenveto {
     border: solid;
     border-width: 3px;
@@ -178,6 +177,8 @@ summary.yhteenveto {
     padding-top: 1%;
     padding-bottom: 1%;
 }
+
+/* Ki-sivun otsikkokuvan ja tekstin muotoilu keskitetysti */
 div.ki {
     margin: auto;
     width: 100%;
@@ -185,7 +186,8 @@ div.ki {
     height: auto;
 }
 
-/*Sensei-Grid*/
+/* CSS-grid "Sensei-Grid", kun iso kuva on oikealla, teksti vasemmalla ja sen alla linkki*/
+/* Sensei-Gridin osa-alueiden määrittely*/
 .sensei-item1 { 
     grid-area: text;
     text-align: left;
@@ -200,7 +202,7 @@ div.ki {
     align-content: center;
     justify-content: center;
 }
-
+/* Sensei-Gridin ja sen osa-alueiden paikkojen määrittely*/
 .senseigrid {
   display: grid;
   grid-template-areas:
@@ -208,28 +210,34 @@ div.ki {
     'text text text image image'
     'link link link image image';
   gap: 30px;
+/* Kaikki peritään div.taitajat -osiosta*/
   background-color: inherit;
   padding: inherit;
   margin: inherit;
 }
-
 .senseigrid > div {
   background-color: inherit;
   text-align: left;
   padding: 2%;
 }
-
+/* CSS-grid "Sensei-Grid", kun iso kuva nousee 1100 pikselissä tekstin ja linkin yläpuolelle*/
 @media only screen and (max-width: 1100px) {
   .sensei-item1 { grid-area: 2 / 1 / 2 / span 5; }
   .sensei-item2 { grid-area: 3 / 1 / 3 / span 5; }
   .sensei-item3 { grid-area: 1 / 1 / 1 / span 5; }
 }
 
-/*Ki-Grid*/
+/* CSS-grid "Ki-Grid", kun pieni kuva on vasemmalla, teksti oikealla ja sen alla linkki*/
+/* Ki-Gridin osa-alueiden määrittely*/
 .ki-item1 { grid-area: text; }
 .ki-item2 { grid-area: link; }
-.ki-item3 { grid-area: image; }
-
+.ki-item3 {
+    grid-area: image;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+/* Ki-Gridin ja sen osa-alueiden paikkojen määrittely */
 .kigrid {
   display: grid;
   grid-template-areas:
@@ -237,23 +245,25 @@ div.ki {
     'image text text text text'
     'image link link link link';
   gap: 30px;
+  /* Kaikki peritään div.taitajat -osiosta */
   background-color: inherit;
   padding: inherit;
   margin: inherit;
 }
-
 .kigrid > div {
   background-color: inherit;
   text-align: left;
   padding: 2%;
 }
-
-@media only screen and (max-width: 600px) {
+/* Responsiivisuus: CSS-grid "Ki-Grid", kun pieni kuva nousee 660 pikselissä tekstin ja linkin yläpuolelle*/
+@media only screen and (max-width: 660px) {
   .ki-item1 { grid-area: 2 / 1 / 2 / span 5; }
   .ki-item2 { grid-area: 3 / 1 / 3 / span 5; }
   .ki-item3 { grid-area: 1 / 1 / 1 / span 5; }
 }
 
+/* Sivuston kuvien muotoilut */
+/* Taitajat-sivun henkilökuvien muotoilu */
 img.taitaja {
     float:left;
     width: 30%;
@@ -267,6 +277,7 @@ img.taitaja {
     border-color: rgb(154, 150, 133);
     border-width: 7px;
 }
+/* Isojen AI:n tekemien kuvien muotoilu */
 img.sensei {
     width: 80%;
     height: auto;
@@ -281,12 +292,13 @@ img.sensei {
     min-width: 350px;
     max-width: 550px;
 }
+/* Responsiivisuus: Annetaan isojen kuvien alkaa kutistua 600 pikselissä */
 @media only screen and (max-width: 600px) {
   img.sensei {
     min-width: auto;
 }
 }
-
+/* Pienten Historia-sivun kuvien muotoilu */
 img.historia {
     float: right;
     width: 20%;
@@ -294,18 +306,15 @@ img.historia {
     padding: 2%;
     margin: 3%;
 }
+/* Ki-kuvan muotoilu. Responsiivisuutta ei tarvita erikseen, koska niin pieni kuva */
 img.ki {
-    float: left;
-    width: 100%;
+    width: 250px;
     height: auto;
     padding: 5%;
-    max-width: 250px;
 }
-@media only screen and (max-width: 600px) {
-  img.ki {
-    min-width: auto;
-}
-}
+
+/* Kaikkien sivuston linkkien muotoilut */
+/* Tavallisten tekstin seassa olevien linkkien muotoilu */
 a:link {
     color:rgb(31, 72, 54);
     font-family: Courier;
@@ -323,6 +332,7 @@ a:hover {
     font-family: Courier;
     font-size: 110%;
 }
+/* Navigaation linkkien muotoilu */
 a.nav:link {
     color:rgb(0, 0, 0);
     font-family: Courier;
@@ -344,6 +354,7 @@ a.nav:hover {
     text-decoration: none;
     font-size: 110%;
 }
+/* Erikseen olevien lisätietolinkkien muotoilu */
 a.enempi:link {
     color:rgb(20, 33, 17);
     font-family: Courier;
@@ -368,13 +379,7 @@ a.enempi:hover {
     font-size: 100%;
     padding-left: 5%;
 }
-p.footer {
-  color:rgb(255, 255, 255);
-  font-family: Courier;
-  font-size: 100%;
-  padding-left: 5%;
-  padding-right: 5%;
-}
+/* Sivujen alalaidan footer-elementin muotoilu */
 footer {
     text-align: center;
     background-color: rgb(0, 0, 0);
@@ -383,4 +388,12 @@ footer {
     margin-top: 10%;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+/* Footerin sisällä olevan tekstikappaleen muotoilu */
+p.footer {
+  color:rgb(255, 255, 255);
+  font-family: Courier;
+  font-size: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
