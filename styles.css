@@ -543,6 +543,7 @@ img.ki {
     margin-right: 10%;
     
 }
+/* HTML-image map -kuvan muotoilu */
 img.kartta {
     padding: 2%;
     margin-top: 3%;
@@ -552,6 +553,14 @@ img.kartta {
     border: double;
     border-color: rgb(154, 150, 133);
     border-width: 7px;
+}
+/* HTML-image map -kuvan responsiivisuus, joka rikkoo image map-toiminnon! */
+@media only screen and (max-width: 570px) {
+  img.kartta {
+    align-self: center;
+    width: 82%;
+    heigh: auto;
+}
 }
 /* Responsiivisuus: Videosivun videoille tarvitaan kotelo, että videoiden kuvasuhde säilyy kokoa muutettaessa*/
 div.videokotelo {
