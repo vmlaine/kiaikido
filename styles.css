@@ -14,6 +14,7 @@ body {
 /* Navigaatio-elementin muotoilu pysymään kiinni bodyn yläosassa, ym. muotoilut */
 body nav {
     position: sticky;
+    z-index:1;
     top: 0;
     display: flex;
     justify-content: center;
@@ -151,6 +152,8 @@ p {
     padding-left: 5%;
     padding-right: 5%;
 }
+/* Erikoiskappale pelkästään kuvien asemointiin */
+p.clearboth {clear:both}
 
 /* Bodyn sisällä olevan sisältöosion muotoilu */
 div.taitaja {
@@ -338,7 +341,7 @@ padding: 2%;
     align-content: center;
     justify-content: center;
 }
-/* Ki-Gridin ja sen osa-alueiden paikkojen määrittely */
+/* Linkit-Gridin ja sen osa-alueiden paikkojen määrittely */
 .linkitgrid {
   display: grid;
   grid-template-areas:
@@ -364,6 +367,109 @@ padding: 2%;
   .linkit-item3 { grid-area: 3 / 1 / 3 / span 5; }
 }
 
+/* CSS-grid "SuuntauksetV-Grid", kun pikkukuva on vasemmalla ja teksti tai muu sisältö oikealla */
+/* Suuntaukset-Gridin osa-alueiden määrittely*/
+.suuntauksetv-item1 { grid-area: image;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.suuntauksetv-item2 { grid-area: text; }
+    
+/* SuuntauksetV-Gridin ja sen osa-alueiden paikkojen määrittely */
+.suuntauksetvgrid {
+  display: grid;
+  grid-template-areas:
+    'image text text text text text text'
+    'image text text text text text text';
+  gap: 30px;
+  /* Kaikki peritään div.taitajat -osiosta */
+  background-color: inherit;
+  padding: inherit;
+  margin: inherit;
+}
+.suuntausketvgrid > div {
+  background-color: inherit;
+  text-align: left;
+  padding: 2%;
+}
+/* Responsiivisuus: CSS-grid "SuuntauksetV-Grid", kun kuvat siirtyvät 600 pikselissä tekstin yläpuolelle */
+@media only screen and (max-width: 600px) {
+  .suuntauksetv-item1 { grid-area: 1 / 1 / 1 / span 7; }
+  .suuntauksetv-item2 { grid-area: 2 / 1 / 2 / span 7; }
+}
+
+/* CSS-grid "SuuntauksetO-Grid", kun pikkukuva on oikealla ja teksti tai muu sisältö vasemmalla */
+/* Suuntaukset-Gridin osa-alueiden määrittely*/
+.suuntaukseto-item1 { grid-area: image;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.suuntaukseto-item2 { grid-area: text; }
+/* SuuntauksetO-Gridin ja sen osa-alueiden paikkojen määrittely */
+.suuntauksetogrid {
+display: grid;
+grid-template-areas:
+  'text text text text text text image'
+  'text text text text text text image';
+gap: 30px;
+/* Kaikki peritään div.taitajat -osiosta */
+background-color: inherit;
+padding: inherit;
+margin: inherit;
+}
+.suuntausketogrid > div {
+background-color: inherit;
+text-align: left;
+padding: 2%;
+}
+/* Responsiivisuus: CSS-grid "SuuntauksetO-Grid", kun kuvat siirtyvät 600 pikselissä tekstin yläpuolelle */
+@media only screen and (max-width: 600px) {
+  .suuntaukseto-item1 { grid-area: 1 / 1 / 1 / span 7; }
+  .suuntaukseto-item2 { grid-area: 2 / 1 / 2 / span 7; }
+}
+
+/* CSS-grid "Video-Grid" videoiden asemointiin sivulle kaksi vierekkäin ja kolme allekain */
+/* Videot-Gridin osa-alueiden määrittely*/
+.video-item1 { grid-area: video1; }
+.video-item2 { grid-area: video2; }
+.video-item3 { grid-area: video3; }
+.video-item4 { grid-area: video4; }
+.video-item5 { grid-area: video5; }
+.video-item6 { grid-area: video6; }
+/* Video-Gridin ja sen osa-alueiden paikkojen määrittely */
+.videogrid {
+  display: grid;
+  grid-template-areas:
+    'video1 video2'
+    'video3 video4'
+    'video5 video6';
+  gap: 0px;
+/* Kaikki peritään div.taitajat -osiosta */
+  background-color: inherit;
+  padding: inherit;
+  margin: inherit;
+}
+.videogrid > div {
+background-color: inherit;
+text-align: center;
+padding: 5%;
+}
+/* Responsiivisuus: CSS-grid "Video-Grid", kun kuvat siirtyvät 1300 pikselissä yhteen sarakkeeseen */
+@media only screen and (max-width: 1200px) {
+  .videogrid {
+    display: grid;
+    grid-template-areas:
+      'video1'
+      'video2'
+      'video3'
+      'video4'
+      'video5'
+      'video6';
+    gap: 0px;
+  }  
+}
 /* Sivuston kuvien muotoilut */
 /* Taitajat-sivun henkilökuvien muotoilu */
 img.taitaja {
@@ -413,28 +519,20 @@ img.sensei {
 }
 /* Suuntaus-sivun pienten kuvien muotoilu */
 img.suuntaus {
-  width: 80%;
-  height: auto;
-  align-self: center;
-  flex: 0 0 auto;
-  padding: 2%;
-  margin-top: 3%;
-  margin-bottom: 3%;
-  margin-left: 5%;
-  margin-right: 5%;
-  border: double;
-  border-color: rgb(154, 150, 133);
-  border-width: 7px;
-  min-width: 150px;
-  max-width: 250px;
-}
-/* Pienten Historia-sivun kuvien muotoilu */
-img.historia {
-    float: right;
-    width: 20%;
+    width: 80%;
     height: auto;
+    align-self: center;
+    flex: 0 0 auto;
     padding: 2%;
-    margin: 3%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: double;
+    border-color: rgb(154, 150, 133);
+    border-width: 7px;
+    min-width: 150px;
+    max-width: 250px;
 }
 /* Ki-kuvan muotoilu. Responsiivisuutta ei tarvita erikseen, koska niin pieni kuva */
 img.ki {
@@ -443,6 +541,26 @@ img.ki {
     padding: 5%;
     margin-left: 10%;
     margin-right: 10%;
+}
+
+/* Responsiivisuus: Videosivun videoille tarvitaan kotelo, että videoiden kuvasuhde säilyy kokoa muutettaessa*/
+div.videokotelo {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+/* Responsiivisuus: Videosivun upotettujen videoiden muotoilu */
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    z-index:0;
 }
 
 /* Kaikkien sivuston linkkien muotoilut */
