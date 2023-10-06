@@ -562,7 +562,7 @@ img.kartta {
   img.kartta {
     align-self: center;
     width: 82%;
-    heigh: auto;
+    height: auto;
 }
 }
 /* Responsiivisuus: Videosivun videoille tarvitaan kotelo, että videoiden kuvasuhde säilyy kokoa muutettaessa*/
