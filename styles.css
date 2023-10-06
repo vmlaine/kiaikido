@@ -3,7 +3,7 @@ html {
     background-image: url("otsikon_tausta1.png");
     background-color:rgb(237, 233, 209);
     background-size: 100%;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
 }
 /* body-elementin padding siten, että laidoissa tilaa ja jättää myös taustakuvan näkyviin */
 body {
@@ -101,7 +101,6 @@ h1.jap {
   padding-right: 5%;
   float: right; /*Fiksua laittaa kaksi h1-otsikkoa vierekkäin :)*/
 }
-
 /* Japaninkielinen otsikko katoamaan 460 pikselin kohdalla, ettei mene rumaksi suomenkielisen otsikon kanssa */
 @media only screen and (max-width: 460px) {
   #jap {
@@ -255,6 +254,40 @@ div.ki {
   .sensei-item3 { grid-area: 1 / 1 / 1 / span 5; }
 }
 
+/* CSS-grid "Taitaja-Grid", kun iso kuva on vasemmalla ja teksti oikealla */
+/* Taitaja-Gridin osa-alueiden määrittely */
+.taitaja-item1 { 
+  grid-area: image;
+  text-align: left;
+}
+.taitaja-item2 {
+  grid-area: text;
+  text-align: center;
+}
+/* Taitaja-Gridin ja sen osa-alueiden paikkojen määrittely */
+.taitajagrid {
+display: grid;
+grid-template-areas:
+  'image image text text text'
+  'image image text text text'
+  'image image text text text';
+gap: 30px;
+/* Kaikki peritään div.taitajat -osiosta*/
+background-color: inherit;
+padding: inherit;
+margin: inherit;
+}
+.taitajagrid > div {
+background-color: inherit;
+text-align: left;
+padding: 2%;
+}
+/* CSS-grid "Taitaja-Grid", kun iso kuva nousee 1100 pikselissä tekstin yläpuolelle*/
+@media only screen and (max-width: 1100px) {
+.taitaja-item1 { grid-area: 1 / 1 / 1 / span 5; }
+.taitaja-item2 { grid-area: 2 / 1 / 2 / span 5; }
+}
+
 /* CSS-grid "Ki-Grid", kun pieni kuva on vasemmalla, teksti oikealla ja sen alla linkki*/
 /* Ki-Gridin osa-alueiden määrittely*/
 .ki-item1 { grid-area: text; }
@@ -319,7 +352,7 @@ div.ki {
   padding: inherit;
   margin: inherit;
 }
-.linkgrid > div {
+.linkitgrid > div {
   background-color: inherit;
   text-align: left;
   padding: 2%;
@@ -334,9 +367,10 @@ div.ki {
 /* Sivuston kuvien muotoilut */
 /* Taitajat-sivun henkilökuvien muotoilu */
 img.taitaja {
-    float:left;
-    width: 30%;
+    width: 80%;
     height: auto;
+    align-self: center;
+    flex: 0 0 auto;
     padding: 2%;
     margin-top: 3%;
     margin-bottom: 3%;
@@ -345,11 +379,21 @@ img.taitaja {
     border: double;
     border-color: rgb(154, 150, 133);
     border-width: 7px;
+    min-width: 350px;
+    max-width: 550px;
+}
+/* Responsiivisuus: Annetaan Taitajat-kuvien alkaa kutistua 600 pikselissä */
+@media only screen and (max-width: 600px) {
+  img.taitaja {
+    min-width: auto;
+}
 }
 /* Isojen AI:n tekemien kuvien muotoilu */
 img.sensei {
     width: 80%;
     height: auto;
+    align-self: center;
+    flex: 0 0 auto;
     padding: 2%;
     margin-top: 3%;
     margin-bottom: 3%;
@@ -366,6 +410,23 @@ img.sensei {
   img.sensei {
     min-width: auto;
 }
+}
+/* Suuntaus-sivun pienten kuvien muotoilu */
+img.suuntaus {
+  width: 80%;
+  height: auto;
+  align-self: center;
+  flex: 0 0 auto;
+  padding: 2%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  margin-left: 5%;
+  margin-right: 5%;
+  border: double;
+  border-color: rgb(154, 150, 133);
+  border-width: 7px;
+  min-width: 150px;
+  max-width: 250px;
 }
 /* Pienten Historia-sivun kuvien muotoilu */
 img.historia {
@@ -453,33 +514,34 @@ a.enempi:hover {
 
 /* Linkki-listan muotoilu */
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
-  width: 100%;
-  border: 0px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 0px;
 }
 th, td {
-  font-family: Courier;
-  text-align: left;
-  padding: 8px;
+    font-family: Courier;
+    text-align: left;
+    padding: 8px;
 }
-tr:nth-child(even){background-color: rgb(231, 205, 170);}
+tr:nth-child(even){background-color: rgb(223, 205, 182);}
+tr:nth-child(odd){background-color: rgb(192, 208, 238);}
 
 /* Buttoneiden muotoilut*/
 .button {
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
 }
 
-.button1 {background-color: #91af92;} /* Green */
-.button2 {background-color: #7fa3b0;} /* Blue */
+.button1 {background-color: #91af92;}
+.button2 {background-color: #7fa3b0;}
 
 /* Sivujen alalaidan footer-elementin muotoilu */
 footer {
