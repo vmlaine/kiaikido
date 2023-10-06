@@ -1,40 +1,42 @@
 /* Yläosan kuvan paikka kiinni ylälaitaan ja sivuihin. Näytetään yläreunassa vain kerran. Samalla koko sivun taustavärin määritys */
 html {
-    background-image: url("otsikon_tausta1.png");
-    background-color:rgb(237, 233, 209);
-    background-size: 100%;
-    background-repeat: no-repeat;
+  background-image: url("otsikon_tausta1.png");
+  background-color:rgb(237, 233, 209);
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
+
 /* body-elementin padding siten, että laidoissa tilaa ja jättää myös taustakuvan näkyviin */
-body {
+  body {
     padding-top: 15%;
     padding-left: 5%;
     padding-right: 5%;
-}
-/* Navigaatio-elementin muotoilu pysymään kiinni bodyn yläosassa, ym. muotoilut */
-body nav {
-    position: sticky;
-    z-index:1;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    background-color: rgb(237, 233, 209);
-    background-image: url("navtausta.png");
-    background-size: auto 76px;
-    border-top: double;
-    border-bottom: double;
-    border-color: rgb(204, 200, 178);
-    border-width: 7px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-}
-/* Navigaatio listana, joten kaikki sen sisus muotoillaan tässä */
-  ul {
-    background: rgb(237, 233, 209);
-    list-style: none;
-    margin: 0;
-    padding-left: 0;
   }
+/* Navigaatio-elementin muotoilu pysymään kiinni bodyn yläosassa, ym. muotoilut */
+    body nav {
+      position: sticky;
+      z-index:1;
+      top: 0;
+      display: flex;
+      justify-content: center;
+      background-color: rgb(237, 233, 209);
+      background-image: url("navtausta.png");
+      background-size: auto 76px;
+      border-top: double;
+      border-bottom: double;
+      border-color: rgb(204, 200, 178);
+      border-width: 7px;
+      padding-top: 2px;
+      padding-bottom: 2px;
+    }
+
+/* Navigaatio listana, joten kaikki sen sisus muotoillaan tässä */
+ul {
+  background: rgb(237, 233, 209);
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
   li {
     color: #000000;
     background: rgb(237, 233, 209);
@@ -61,38 +63,38 @@ body nav {
   li:focus-within a {  /*Focus-within tarvitaan saavutettavuuden takia, muuten ei tabulaattorilla voi navia selata*/
     outline: none;
   }
-  ul li ul {
-    background: rgb(237, 233, 209);
-    visibility: hidden;
-    opacity: 0;
-    min-width: 5rem;
-    position: absolute;
-    transition: all 2s ease; /*lisää CSS-animaatiota, eli navigaation feidausefekti ;)*/
-    margin-top: 6px;
-    left: 0;
-    display: none;
-  }
-  ul li:hover > ul,
-  ul li:focus-within > ul,  /*Focus-within tarvitaan saavutettavuuden takia, muuten ei tabulaattorilla voi navia selata*/
-  ul li ul:hover {
-    visibility: visible;
-    opacity: 1;
-    display: block;
-  }
-  ul li ul li {
-    clear: both;
-    width: 100%;
-  }
+    ul li ul {
+      background: rgb(237, 233, 209);
+      visibility: hidden;
+      opacity: 0;
+      min-width: 5rem;
+      position: absolute;
+      transition: all 2s ease; /*lisää CSS-animaatiota, eli navigaation feidausefekti ;)*/
+      margin-top: 6px;
+      left: 0;
+      display: none;
+    }
+    ul li:hover > ul,
+    ul li:focus-within > ul,  /*Focus-within tarvitaan saavutettavuuden takia, muuten ei tabulaattorilla voi navia selata*/
+    ul li ul:hover {
+      visibility: visible;
+      opacity: 1;
+      display: block;
+    }
+      ul li ul li {
+        clear: both;
+        width: 100%;
+      }
 
 /* Kaikkien otsikoiden muotoilut (h1-h6) */
 h1 {
-    color: rgb(61, 44, 24);
-    font-family: Courier;
-    display:inline-block;
-    font-size: 200%;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 2%;
+  color: rgb(61, 44, 24);
+  font-family: Courier;
+  display:inline-block;
+  font-size: 200%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2%;
 }
 h1.jap {
   color: rgb(61, 44, 24);
@@ -109,59 +111,59 @@ h1.jap {
   }    
 }
 h2 {
-    color:rgb(61, 44, 24);
-    font-family: Courier;
-    font-size: 160%;
-    padding-left: 5%;
-    padding-right: 5%;
+  color:rgb(61, 44, 24);
+  font-family: Courier;
+  font-size: 160%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 h3 {
-    color: rgb(61, 44, 24);
-    font-family: Courier;
-    font-size: 140%;
-    padding-left: 5%;
-    padding-right: 5%;
+  color: rgb(61, 44, 24);
+  font-family: Courier;
+  font-size: 140%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 h4 {
-    color:rgb(61, 44, 24);
-    font-family: Courier;
-    font-size: 120%;
-    padding-left: 5%;
-    padding-right: 5%;
+  color:rgb(61, 44, 24);
+  font-family: Courier;
+  font-size: 120%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 h5 {
-    color:rgb(61, 44, 24);
-    font-family: Courier;
-    font-size: 110%;
-    padding-left: 5%;
-    padding-right: 5%;
+  color:rgb(61, 44, 24);
+  font-family: Courier;
+  font-size: 110%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 h6 {
-    color:rgb(61, 44, 24);
-    font-family: Courier;
-    font-size: 110%;
-    padding-left: 5%;
-    padding-right: 5%;
+  color:rgb(61, 44, 24);
+  font-family: Courier;
+  font-size: 110%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 /* Tekstikappaleiden muotoilu */
 p {
-    color:rgb(27, 18, 11);
-    font-family: Courier;
-    font-size: 100%;
-    padding-left: 5%;
-    padding-right: 5%;
+  color:rgb(27, 18, 11);
+  font-family: Courier;
+  font-size: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 /* Erikoiskappale pelkästään kuvien asemointiin */
 p.clearboth {clear:both}
 
 /* Bodyn sisällä olevan sisältöosion muotoilu */
 div.taitaja {
-    border-top: double;
-    border-bottom: double;
-    border-color: rgb(154, 150, 133);
-    background-color: rgb(231, 225, 199);
-    border-width: 7px;
+  border-top: double;
+  border-bottom: double;
+  border-color: rgb(154, 150, 133);
+  background-color: rgb(231, 225, 199);
+  border-width: 7px;
 }
 
 /* Linkkilistan osion muotoilu responsiiviseksi */
@@ -178,18 +180,18 @@ div.linkit {
 
 /* Yhteenvetolaatikon muotoilu */
 summary.yhteenveto {
-    border: solid;
-    border-width: 3px;
-    border-color: rgb(161, 174, 156);
-    background-color:rgb(205, 215, 191);
-    font-family: inherit;
-    font-style: italic;
-    margin-top: 3%;
-    margin-bottom: 3%;
-    margin-left: 5%;
-    margin-right: 5%;
-    padding-top: 1%;
-    padding-bottom: 1%;
+  border: solid;
+  border-width: 3px;
+  border-color: rgb(161, 174, 156);
+  background-color:rgb(205, 215, 191);
+  font-family: inherit;
+  font-style: italic;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-top: 1%;
+  padding-bottom: 1%;
 }
 
 /* Sisällöntuottajat - osion muotoilu */
@@ -210,27 +212,27 @@ summary.tuottajat {
 
 /* Ki-sivun otsikkokuvan ja tekstin muotoilu keskitetysti */
 div.ki {
-    margin: auto;
-    width: 100%;
-    text-align: center;
-    height: auto;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  height: auto;
 }
 
 /* CSS-grid "Sensei-Grid", kun iso kuva on oikealla, teksti vasemmalla ja sen alla linkki*/
 /* Sensei-Gridin osa-alueiden määrittely*/
 .sensei-item1 { 
-    grid-area: text;
-    text-align: left;
+  grid-area: text;
+  text-align: left;
 }
 .sensei-item2 {
-    grid-area: link;
-    text-align: center;
+  grid-area: link;
+  text-align: center;
 }
 .sensei-item3 {
-    grid-area: image;
-    display: flex;
-    align-content: center;
-    justify-content: center;
+  grid-area: image;
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
 /* Sensei-Gridin ja sen osa-alueiden paikkojen määrittely*/
 .senseigrid {
@@ -269,21 +271,21 @@ div.ki {
 }
 /* Taitaja-Gridin ja sen osa-alueiden paikkojen määrittely */
 .taitajagrid {
-display: grid;
-grid-template-areas:
-  'image image text text text'
-  'image image text text text'
-  'image image text text text';
-gap: 30px;
+  display: grid;
+  grid-template-areas:
+    'image image text text text'
+    'image image text text text'
+    'image image text text text';
+  gap: 30px;
 /* Kaikki peritään div.taitajat -osiosta*/
-background-color: inherit;
-padding: inherit;
-margin: inherit;
+  background-color: inherit;
+  padding: inherit;
+  margin: inherit;
 }
 .taitajagrid > div {
-background-color: inherit;
-text-align: left;
-padding: 2%;
+  background-color: inherit;
+  text-align: left;
+  padding: 2%;
 }
 /* CSS-grid "Taitaja-Grid", kun iso kuva nousee 1100 pikselissä tekstin yläpuolelle*/
 @media only screen and (max-width: 1100px) {
@@ -309,7 +311,7 @@ padding: 2%;
     'image text text text text'
     'image link link link link';
   gap: 30px;
-  /* Kaikki peritään div.taitajat -osiosta */
+/* Kaikki peritään div.taitajat -osiosta */
   background-color: inherit;
   padding: inherit;
   margin: inherit;
@@ -330,16 +332,16 @@ padding: 2%;
 /* Linkit-Gridin osa-alueiden määrittely*/
 .linkit-item1 { grid-area: links; }
 .linkit-item2 {
-    grid-area: image1;
-    display: flex;
-    align-content: center;
-    justify-content: center;
+  grid-area: image1;
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
 .linkit-item3 {
-    grid-area: image2;
-    display: flex;
-    align-content: center;
-    justify-content: center;
+  grid-area: image2;
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
 /* Linkit-Gridin ja sen osa-alueiden paikkojen määrittely */
 .linkitgrid {
@@ -370,9 +372,9 @@ padding: 2%;
 /* CSS-grid "SuuntauksetV-Grid", kun pikkukuva on vasemmalla ja teksti tai muu sisältö oikealla */
 /* Suuntaukset-Gridin osa-alueiden määrittely*/
 .suuntauksetv-item1 { grid-area: image;
-    display: flex;
-    align-content: center;
-    justify-content: center;
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
 .suuntauksetv-item2 { grid-area: text; }
     
@@ -383,7 +385,7 @@ padding: 2%;
     'image text text text text text text'
     'image text text text text text text';
   gap: 30px;
-  /* Kaikki peritään div.taitajat -osiosta */
+/* Kaikki peritään div.taitajat -osiosta */
   background-color: inherit;
   padding: inherit;
   margin: inherit;
@@ -409,20 +411,20 @@ padding: 2%;
 .suuntaukseto-item2 { grid-area: text; }
 /* SuuntauksetO-Gridin ja sen osa-alueiden paikkojen määrittely */
 .suuntauksetogrid {
-display: grid;
-grid-template-areas:
-  'text text text text text text image'
-  'text text text text text text image';
-gap: 30px;
+  display: grid;
+  grid-template-areas:
+    'text text text text text text image'
+    'text text text text text text image';
+  gap: 30px;
 /* Kaikki peritään div.taitajat -osiosta */
-background-color: inherit;
-padding: inherit;
-margin: inherit;
+  background-color: inherit;
+  padding: inherit;
+  margin: inherit;
 }
 .suuntausketogrid > div {
-background-color: inherit;
-text-align: left;
-padding: 2%;
+  background-color: inherit;
+  text-align: left;
+  padding: 2%;
 }
 /* Responsiivisuus: CSS-grid "SuuntauksetO-Grid", kun kuvat siirtyvät 600 pikselissä tekstin yläpuolelle */
 @media only screen and (max-width: 600px) {
@@ -452,9 +454,9 @@ padding: 2%;
   margin: inherit;
 }
 .videogrid > div {
-background-color: inherit;
-text-align: center;
-padding: 5%;
+  background-color: inherit;
+  text-align: center;
+  padding: 5%;
 }
 /* Responsiivisuus: CSS-grid "Video-Grid", kun kuvat siirtyvät 1300 pikselissä yhteen sarakkeeseen */
 @media only screen and (max-width: 1200px) {
@@ -470,23 +472,24 @@ padding: 5%;
     gap: 0px;
   }  
 }
+
 /* Sivuston kuvien muotoilut */
 /* Taitajat-sivun henkilökuvien muotoilu */
 img.taitaja {
-    width: 80%;
-    height: auto;
-    align-self: center;
-    flex: 0 0 auto;
-    padding: 2%;
-    margin-top: 3%;
-    margin-bottom: 3%;
-    margin-left: 5%;
-    margin-right: 5%;
-    border: double;
-    border-color: rgb(154, 150, 133);
-    border-width: 7px;
-    min-width: 350px;
-    max-width: 550px;
+  width: 80%;
+  height: auto;
+  align-self: center;
+  flex: 0 0 auto;
+  padding: 2%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  margin-left: 5%;
+  margin-right: 5%;
+  border: double;
+  border-color: rgb(154, 150, 133);
+  border-width: 7px;
+  min-width: 350px;
+  max-width: 550px;
 }
 /* Responsiivisuus: Annetaan Taitajat-kuvien alkaa kutistua 600 pikselissä */
 @media only screen and (max-width: 600px) {
@@ -496,20 +499,20 @@ img.taitaja {
 }
 /* Isojen AI:n tekemien kuvien muotoilu */
 img.sensei {
-    width: 80%;
-    height: auto;
-    align-self: center;
-    flex: 0 0 auto;
-    padding: 2%;
-    margin-top: 3%;
-    margin-bottom: 3%;
-    margin-left: 5%;
-    margin-right: 5%;
-    border: double;
-    border-color: rgb(154, 150, 133);
-    border-width: 7px;
-    min-width: 350px;
-    max-width: 550px;
+  width: 80%;
+  height: auto;
+  align-self: center;
+  flex: 0 0 auto;
+  padding: 2%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  margin-left: 5%;
+  margin-right: 5%;
+  border: double;
+  border-color: rgb(154, 150, 133);
+  border-width: 7px;
+  min-width: 350px;
+  max-width: 550px;
 }
 /* Responsiivisuus: Annetaan isojen kuvien alkaa kutistua 600 pikselissä */
 @media only screen and (max-width: 600px) {
@@ -519,40 +522,40 @@ img.sensei {
 }
 /* Suuntaus-sivun pienten kuvien muotoilu */
 img.suuntaus {
-    width: 80%;
-    height: auto;
-    align-self: center;
-    flex: 0 0 auto;
-    padding: 2%;
-    margin-top: 3%;
-    margin-bottom: 3%;
-    margin-left: 5%;
-    margin-right: 5%;
-    border: double;
-    border-color: rgb(154, 150, 133);
-    border-width: 7px;
-    min-width: 150px;
-    max-width: 250px;
+  width: 80%;
+  height: auto;
+  align-self: center;
+  flex: 0 0 auto;
+  padding: 2%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  margin-left: 5%;
+  margin-right: 5%;
+  border: double;
+  border-color: rgb(154, 150, 133);
+  border-width: 7px;
+  min-width: 150px;
+  max-width: 250px;
 }
 /* Ki-kuvan muotoilu. Responsiivisuutta ei tarvita erikseen, koska niin pieni kuva */
 img.ki {
-    width: 250px;
-    height: auto;
-    padding: 5%;
-    margin-left: 10%;
-    margin-right: 10%;
+  width: 250px;
+  height: auto;
+  padding: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
     
 }
 /* HTML-image map -kuvan muotoilu */
 img.kartta {
-    padding: 2%;
-    margin-top: 3%;
-    margin-bottom: 3%;
-    margin-left: 5%;
-    margin-right: 5%;
-    border: double;
-    border-color: rgb(154, 150, 133);
-    border-width: 7px;
+  padding: 2%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  margin-left: 5%;
+  margin-right: 5%;
+  border: double;
+  border-color: rgb(154, 150, 133);
+  border-width: 7px;
 }
 /* HTML-image map -kuvan responsiivisuus, joka rikkoo image map-toiminnon! */
 @media only screen and (max-width: 570px) {
@@ -564,131 +567,131 @@ img.kartta {
 }
 /* Responsiivisuus: Videosivun videoille tarvitaan kotelo, että videoiden kuvasuhde säilyy kokoa muutettaessa*/
 div.videokotelo {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    padding-top: 56.25%;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%;
 }
 /* Responsiivisuus: Videosivun upotettujen videoiden muotoilu */
 iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    border: none;
-    z-index:0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  z-index:0;
 }
 
 /* Kaikkien sivuston linkkien muotoilut */
 /* Tavallisten tekstin seassa olevien linkkien muotoilu */
 a:link {
-    color:rgb(31, 72, 54);
-    font-family: Courier;
-    text-decoration: none;
-    font-size: 110%;
+  color:rgb(31, 72, 54);
+  font-family: Courier;
+  text-decoration: none;
+  font-size: 110%;
 }
 a:visited {
-    color:rgb(42, 32, 62);
-    font-family: Courier;
-    text-decoration: none;
-    font-size: 110%;
+  color:rgb(42, 32, 62);
+  font-family: Courier;
+  text-decoration: none;
+  font-size: 110%;
 }
 a:hover {
-    color:rgb(75, 154, 136);
-    font-family: Courier;
-    font-size: 110%;
+  color:rgb(75, 154, 136);
+  font-family: Courier;
+  font-size: 110%;
 }
 /* Navigaation linkkien muotoilu */
 a.nav:link {
-    color:rgb(0, 0, 0);
-    font-family: Courier;
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 110%;
+  color:rgb(0, 0, 0);
+  font-family: Courier;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 110%;
 }
 a.nav:visited {
-    color:rgb(0, 0, 0);
-    font-family: Courier;
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 110%;
+  color:rgb(0, 0, 0);
+  font-family: Courier;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 110%;
 }
 a.nav:hover {
-    color:rgb(36, 36, 36);
-    font-family: Courier;
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 110%;
+  color:rgb(36, 36, 36);
+  font-family: Courier;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 110%;
 }
 /* Erikseen olevien lisätietolinkkien muotoilu */
 a.enempi:link {
-    color:rgb(20, 33, 17);
-    font-family: Courier;
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 100%;
-    padding-left: 5%;
+  color:rgb(20, 33, 17);
+  font-family: Courier;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 100%;
+  padding-left: 5%;
 }
 a.enempi:visited {
-    color:rgb(20, 33, 17);
-    font-family: Courier;
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 100%;
-    padding-left: 5%;
+  color:rgb(20, 33, 17);
+  font-family: Courier;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 100%;
+  padding-left: 5%;
 }
 a.enempi:hover {
-    color:rgb(53, 87, 45);
-    font-family: Courier;
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 100%;
-    padding-left: 5%;
+  color:rgb(53, 87, 45);
+  font-family: Courier;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 100%;
+  padding-left: 5%;
 }
 
 /* Linkki-listan muotoilu */
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
-    width: 100%;
-    border: 0px;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 0px;
 }
 th, td {
-    font-family: Courier;
-    text-align: left;
-    padding: 8px;
+  font-family: Courier;
+  text-align: left;
+  padding: 8px;
 }
-tr:nth-child(even){background-color: rgb(223, 205, 182);}
-tr:nth-child(odd){background-color: rgb(192, 208, 238);}
+  tr:nth-child(even){background-color: rgb(223, 205, 182);}
+  tr:nth-child(odd){background-color: rgb(192, 208, 238);}
 
 /* Buttoneiden muotoilut*/
 .button {
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 
-.button1 {background-color: #91af92;}
-.button2 {background-color: #7fa3b0;}
+  .button1 {background-color: #91af92;}
+  .button2 {background-color: #7fa3b0;}
 
 /* Sivujen alalaidan footer-elementin muotoilu */
 footer {
-    text-align: center;
-    background-color: rgb(0, 0, 0);
-    font-family: Courier;
-    font-size: 85%;
-    margin-top: 10%;
-    padding-top: 10px;
-    padding-bottom: 10px;
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+  font-family: Courier;
+  font-size: 85%;
+  margin-top: 10%;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 /* Footerin sisällä olevan tekstikappaleen muotoilu */
 p.footer {
