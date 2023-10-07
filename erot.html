@@ -1,150 +1,153 @@
 <!DOCTYPE html>
 <html lang="fi-fi">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--To make sure mobile phones etc can read the page properly-->
-        <meta name="description" content="Ki-Aikodon ja Aikidon erot">
-        <meta name="keywords" content="aikido, ki aikido, Shin Shin Toitsu, itsepuolustus, japanilainen, budo">
-        <meta name="author" content="Wellu">
-        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-        <link rel="stylesheet" href="styles.css">
-        <title>Ki-Aikidon ja Aikidon erot</title>
-    </head>
+  <head>
+    <meta charset="UTF-8">
+    <!--Responsiivisuuden ensi askel: sivut toimimaan myös tableteissa ja kännyköissä-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ki-Aikodon ja Aikidon erot">
+    <meta name="keywords" content="aikido, ki aikido, Shin Shin Toitsu, itsepuolustus, japanilainen, budo">
+    <meta name="author" content="Wellu">
+    <!--Kiva pikku ikoni selaimen välilehdelle-->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <title>Ki-Aikidon ja Aikidon erot</title>
+  </head>
     <body>
-        <nav>
-            <ul>
-                <li><a class="nav" href="index.html"><img src="Ki_pieni.png" alt="Ki navigointi" width="100%" height="52" title="Pääsivu"></a></li>
-                <li><a class="nav" href="#"><img src="logo_aikido.png" alt="Aikidon suuntaukset ja Ki" width="auto" height="52"></a>
-                  <ul aria-label="submenu"> <!--Saavutettavuuden avuksi, että esim. tekstin ääneenlukija tunnistaa valikon!-->
-                    <li><a class="nav" href="erot.html">Ki-Aikidon ja Aikidon erot</a></li>
-                    <li><a class="nav" href="suuntaukset.html">Aikidon suuntaukset</a></li>
-                    <li><a class="nav" href="suuntaukset.html#aikikai">*Aikikai</a></li>
-                    <li><a class="nav" href="suuntaukset.html#yoshinkai">*Yoshinkai</a></li>
-                    <li><a class="nav" href="suuntaukset.html#iwama">*Iwama-Ryu</a></li>
-                    <li><a class="nav" href="suuntaukset.html#kiaikido">*Ki-Aikido</a></li>
-                    <li><a class="nav" href="suuntaukset.html#shodokan">*Shodokan</a></li>
-                    <li><a class="nav" href="suuntaukset.html#kokikai">*Kokikai</a></li>
-                    <li><a class="nav" href="ki.html">Mikä/mitä on Ki?</a></li>
-                  </ul>
-                </li>
-                <li><a class="nav" href="#"><img src="logo_japanilaiset.png" alt="Ihmiset" width="100%" height="52"></a>
-                  <ul aria-label="submenu"> <!--Saavutettavuuden avuksi, että esim. tekstin ääneenlukija tunnistaa valikon!-->
-                    <li><a class="nav" href="taitajat.html">Henkilöesittelyt</a></li>
-                    <li><a class="nav" href="taitajat.html#tohei">*Koichi Tohei</a></li>
-                    <li><a class="nav" href="taitajat.html#ueshiba">*Morihei Ueshiba</a></li>
-                    <li><a class="nav" href="taitajat.html#kueshiba">*Kisshomaru Ueshiba</a></li>
-                    <li><a class="nav" href="taitajat.html#gozo">*Gozo Shioda</a></li>
-                    <li><a class="nav" href="taitajat.html#tomiki">*Kenji Tomiki</a></li>
-                    <li><a class="nav" href="taitajat.html#saito">*Morihiro Saito</a></li>
-                    <li><a class="nav" href="taitajat.html#varis">*Rainer Varis</a></li>
-                    <li><a class="nav" href="taitajat.html#koli">*Henkka Koli</a></li>
-                  </ul>
-                </li>
-                <li><a class="nav" href="#"><img src="logo_historia.png" alt="Ki-Aikidon historia" width="100%" height="52"></a>
-                  <ul aria-label="submenu"> <!--Saavutettavuuden avuksi, että esim. tekstin ääneenlukija tunnistaa valikon!-->
-                    <li><a class="nav" href="historia.html">Ki-Aikidon historia</a></li>
-                    <li><a class="nav" href="historia.html#suomeen">*Aikamatka Suomeen</a></li>
-                    <li><a class="nav" href="historia.html#tulo">*Leviäminen Suomeen</a></li>
-                    <li><a class="nav" href="historia.html#jiujitsu">*Aikido ja Jiu-jitsu</a></li>
-                    <li><a class="nav" href="historia.html#toheikiss">*Ki-Aikidon erosta Aikidosta</a></li>
-                  </ul>
-                </li>
-                <li><a class="nav" href="#"><img src="logo_video.png" alt="Linkit ja videot" width="100%" height="52"></a>
-                  <ul aria-label="submenu"> <!--Saavutettavuuden avuksi, että esim. tekstin ääneenlukija tunnistaa valikon!-->
-                    <li><a class="nav" href="linkit.html">Linkkejä</a></li>
-                    <li><a class="nav" href="linkit.html#sisalto">*Sivuston sisällöstä...</a></li>
-                    <li><a class="nav" href="videot.html">Videoita</a></li>
-                    <li><a class="nav" href="kuvakartta.html">Kuvakartta</a></li>
-                  </ul>
-                </li>
+      <nav>
+        <ul>
+          <li><a class="nav" href="index.html"><img src="Ki_pieni.png" alt="Ki navigointi" width="100%" height="52" title="Pääsivu"></a></li>
+          <li><a class="nav" href="#"><img src="logo_aikido.png" alt="Aikidon suuntaukset ja Ki" width="auto" height="52"></a>
+            <ul aria-label="submenu"> <!--Saavutettavuuden avuksi, että esim. tekstin ääneenlukija tunnistaa valikon!-->
+              <li><a class="nav" href="erot.html">Ki-Aikidon ja Aikidon erot</a></li>
+              <li><a class="nav" href="suuntaukset.html">Aikidon suuntaukset</a></li>
+              <li><a class="nav" href="suuntaukset.html#aikikai">*Aikikai</a></li>
+              <li><a class="nav" href="suuntaukset.html#yoshinkai">*Yoshinkai</a></li>
+              <li><a class="nav" href="suuntaukset.html#iwama">*Iwama-Ryu</a></li>
+              <li><a class="nav" href="suuntaukset.html#kiaikido">*Ki-Aikido</a></li>
+              <li><a class="nav" href="suuntaukset.html#shodokan">*Shodokan</a></li>
+              <li><a class="nav" href="suuntaukset.html#kokikai">*Kokikai</a></li>
+              <li><a class="nav" href="ki.html">Mikä/mitä on Ki?</a></li>
             </ul>
-          </nav>
+          </li>
+          <li><a class="nav" href="#"><img src="logo_japanilaiset.png" alt="Ihmiset" width="100%" height="52"></a>
+            <ul aria-label="submenu"> <!--Saavutettavuuden avuksi, että esim. tekstin ääneenlukija tunnistaa valikon!-->
+              <li><a class="nav" href="taitajat.html">Henkilöesittelyt</a></li>
+              <li><a class="nav" href="taitajat.html#tohei">*Koichi Tohei</a></li>
+              <li><a class="nav" href="taitajat.html#ueshiba">*Morihei Ueshiba</a></li>
+              <li><a class="nav" href="taitajat.html#kueshiba">*Kisshomaru Ueshiba</a></li>
+              <li><a class="nav" href="taitajat.html#gozo">*Gozo Shioda</a></li>
+              <li><a class="nav" href="taitajat.html#tomiki">*Kenji Tomiki</a></li>
+              <li><a class="nav" href="taitajat.html#saito">*Morihiro Saito</a></li>
+              <li><a class="nav" href="taitajat.html#varis">*Rainer Varis</a></li>
+              <li><a class="nav" href="taitajat.html#koli">*Henkka Koli</a></li>
+            </ul>
+          </li>
+          <li><a class="nav" href="#"><img src="logo_historia.png" alt="Ki-Aikidon historia" width="100%" height="52"></a>
+            <ul aria-label="submenu"> <!--Saavutettavuuden avuksi, että esim. tekstin ääneenlukija tunnistaa valikon!-->
+              <li><a class="nav" href="historia.html">Ki-Aikidon historia</a></li>
+              <li><a class="nav" href="historia.html#suomeen">*Aikamatka Suomeen</a></li>
+              <li><a class="nav" href="historia.html#tulo">*Leviäminen Suomeen</a></li>
+              <li><a class="nav" href="historia.html#jiujitsu">*Aikido ja Jiu-jitsu</a></li>
+              <li><a class="nav" href="historia.html#toheikiss">*Ki-Aikidon erosta Aikidosta</a></li>
+            </ul>
+          </li>
+          <li><a class="nav" href="#"><img src="logo_video.png" alt="Linkit ja videot" width="100%" height="52"></a>
+            <ul aria-label="submenu"> <!--Saavutettavuuden avuksi, että esim. tekstin ääneenlukija tunnistaa valikon!-->
+              <li><a class="nav" href="linkit.html">Linkkejä</a></li>
+              <li><a class="nav" href="linkit.html#sisalto">*Sivuston sisällöstä...</a></li>
+              <li><a class="nav" href="videot.html">Videoita</a></li>
+              <li><a class="nav" href="kuvakartta.html">Kuvakartta</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
 
         <h1>Ki-Aikidon ja Aikidon eroja</h1>
-
         <p> Ki-Aikido ja Aikido ovat molemmat japanilaisia itsepuolustuslajeja, mutta niillä on eroja niin harjoittelufilosofiassa kuin
-            käytännön soveltamisessa. Alla tarkastellaan näiden kahden Aikido-muodon eroja.</p>
+            käytännön soveltamisessa. Alla tarkastellaan näiden kahden Aikido-muodon eroja.
+        </p>
         
-    <div class="taitaja">
-      <div class="senseigrid">
-        <div class="sensei-item3">
-          <img class="sensei" src="ajatus-ki-aikido.png" alt="Ajaksena Ki-Aikido" title="Ajatuksena Ki-Aikido">
+        <div class="taitaja">
+          <div class="senseigrid">
+            <div class="sensei-item3">
+              <img class="sensei" src="ajatus-ki-aikido.png" alt="Ajaksena Ki-Aikido" title="Ajatuksena Ki-Aikido">
+            </div>
+            <div class="sensei-item1">
+              <h2>Ki-Aikido</h2>
+
+              <h3>Ki-energian painotus</h3>
+              <p> <a href="suuntaukset.html#kiaikido"><strong>Ki-aikido</strong></a> Ki-aikido korostaa ki-energian &#40;henkisen
+                  energian&#41; käyttöä ja hallintaa. <a href="ki.html"> <strong>&quot;ki&quot;</strong></a> tarkoittaa periaatteessa
+                  elämänvoimaa tai henkistä energiaa. Harjoittelussa pyritään oppimaan hallitsemaan ki-energiaa ja käyttämään sitä
+                  tehokkaasti liikkeissä.
+              </p>
+              <h3>Energian virtaaminen</h3>
+              <p> Ki-Aikidossa uskotaan, että ki-energia virtaa kehossa ja sen ulkopuolella. Harjoittelijat pyrkivät ohjaamaan tätä
+                  virtausta liikkeidensä avulla. Tämän uskotaan lisäävän liikkeiden sulavuutta ja tehokkuutta.
+              </p>
+              <h3>Harjoittelutyyli</h3>
+              <p> Ki-aikidossa harjoittelu voi sisältää erityisiä ki-harjoituksia, kuten keskittymis- ja hengitysharjoituksia. Lisäksi
+                  harjoittelijat pyrkivät soveltamaan ki-energiaa perinteisiin Aikido-tekniikoihin.
+              </p>
+              <h3>Mielentila ja tietoisuus</h3>
+              <p> Ki-aikidossa painotetaan mielentilaa ja tietoisuutta. Harjoittelijat pyrkivät olemaan rentoja ja avoimia, mikä auttaa
+                  heitä reagoimaan nopeasti ja tehokkaasti tilanteisiin.
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="sensei-item1">
-          <h2>Ki-Aikido</h2>
 
-          <h3>Ki-energian painotus</h3>
-          <p> Ki-aikido korostaa ki-energian (henkisen energian) käyttöä ja hallintaa. Ki tarkoittaa periaatteessa elämänvoimaa tai
-              henkistä energiaa. Harjoittelussa pyritään oppimaan hallitsemaan ki-energiaa ja käyttämään sitä tehokkaasti liikkeissä.</p>
+        <br>
 
-          <h3>Energian virtaaminen</h3>
-          <p> Ki-Aikidossa uskotaan, että ki-energia virtaa kehossa ja sen ulkopuolella. Harjoittelijat pyrkivät ohjaamaan tätä virtausta
-              liikkeidensä avulla. Tämän uskotaan lisäävän liikkeiden sulavuutta ja tehokkuutta.</p>
-
-          <h3>Harjoittelutyyli</h3>
-          <p> Ki-aikidossa harjoittelu voi sisältää erityisiä ki-harjoituksia, kuten keskittymis- ja hengitysharjoituksia. Lisäksi
-              harjoittelijat pyrkivät soveltamaan ki-energiaa perinteisiin Aikido-tekniikoihin.</p>
-
-          <h3>Mielentila ja tietoisuus</h3>
-          <p> Ki-aikidossa painotetaan mielentilaa ja tietoisuutta. Harjoittelijat pyrkivät olemaan rentoja ja avoimia, mikä auttaa heitä
-              reagoimaan nopeasti ja tehokkaasti tilanteisiin.</p>
+        <div class="taitaja">
+          <div class="senseigrid">
+            <div class="sensei-item3">
+              <img class="sensei" src="ajatus-aikido.png" alt="Ajatuksena Aikido" title="Ajatuksena Aikido">
+            </div>
+            <div class="sensei-item1">
+              <h2>Aikido</h2>
+              <h3>Harmonia ja voiman ohjaaminen</h3>
+              <p> Perinteisessä <a href="suuntaukset.html#aikido">Aikidossa</a> keskitytään myös harmoniaan ja vastustajan voiman
+                  ohjaamiseen sen sijaan, että siihen vastattaisiin väkivallalla. Aikido pyrkii saavuttamaan tasapainon ja harmonian
+                  konfliktitilanteissa.
+              </p>
+              <h3>Tekniikat ja liikkeet</h3>
+              <p> Aikidossa on laaja valikoima erilaisia tekniikoita, mukaan lukien heitot, lukot ja kuristukset. Harjoittelijat
+                  oppivatsuorittamaan näitä tekniikoita vastustajan liikkeiden ohjaamiseksi ja neutraloimiseksi.
+              </p>
+              <h3>Perinteinen lähestymistapa</h3>
+              <p> Aikido perustuu perinteisiin opetuksiin, jotka ovat peräisin Aikidon perustajalta
+                  <a href="taitajat.html#ueshiba"><strong>Morihei Ueshiba</strong>lta.</a> Aikidoa harjoitellaan yleensä perinteisessä
+                  dojossa &#40;harjoittelutila&#41; ja noudattaa tiukkoja protokollia ja etikettiä.
+              </p>
+              <h3>Henkinen ja fyysinen kehitys</h3>
+              <p> Aikidossa korostetaan sekä henkisen että fyysisen kehityksen tärkeyttä. Harjoittelijat pyrkivät kehittämään
+                  itseään kokonaisvaltaisesti, mukaan lukien kehon hallinta, tasapaino ja keskittyminen.
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-    <br>
-    <div class="taitaja">
-      <div class="senseigrid">
-        <div class="sensei-item3">
-          <img class="sensei" src="ajatus-aikido.png" alt="Ajatuksena Aikido" title="Ajatuksena Aikido">
+
+        <br>
+
+        <div class="taitaja">
+          <summary class="yhteenveto">
+            <h4>Yhteenveto</h4>
+            <p> Vaikka Ki-aikido ja Aikido jakavat saman juuren ja perustuvat vastustajan voiman ohjaamiseen sekä rauhanomaiseen
+                konfliktien ratkaisuun, Ki-aikido keskittyy erityisesti ki-energian hallintaan ja sen soveltamiseen harjoittelussa.
+                Aikidossa on enemmän monimuotoisia tekniikoita ja perinteinen lähestymistapa harjoitteluun. Jokainen harjoittelija
+                voi valita sen, mikä heille sopii parhaiten, ja molemmilla Aikidon muodoilla on arvokkaita opetuksia ja etuja.
+            </p>
+          </summary>
         </div>
-        <div class="sensei-item1">
-          <h2>Aikido</h2>
 
-          <h3>Harmonia ja voiman ohjaaminen</h3>
-          <p> 
-              Perinteisessä Aikidossa keskitytään myös harmoniaan ja vastustajan voiman ohjaamiseen sen sijaan, että siihen vastattaisiin
-              väkivallalla. Aikido pyrkii saavuttamaan tasapainon ja harmonian konfliktitilanteissa.
-          </p>
+        <br>
 
-          <h3>Tekniikat ja liikkeet</h3>
-          <p> 
-              Aikidossa on laaja valikoima erilaisia ​​tekniikoita, mukaan lukien heitot, lukot ja kuristukset. Harjoittelijat oppivat
-              suorittamaan näitä tekniikoita vastustajan liikkeiden ohjaamiseksi ja neutraloimiseksi.
+        <footer>
+          <p class="footer"> Huom! Tämän on kokeellinen sivusto, jonka sisältö ja kuvat on toteutettu pääasiassa tekoälyn avulla.
+             Suhtauduthan varauksella esitettyyn tietoon. Sivuston linkeistä pääset luotettavampiin lähteisiin.
           </p>
-
-          <h3>Perinteinen lähestymistapa</h3>
-          <p> 
-              Aikido perustuu perinteisiin opetuksiin, jotka ovat peräisin Aikidon perustajalta Morihei Ueshibalta. Aikidoa harjoitellaan
-              yleensä perinteisessä dojossa (harjoittelutila) ja noudattaa tiukkoja protokollia ja etikettiä.
-          </p>
-
-          <h3>Henkinen ja fyysinen kehitys</h3>
-          <p> 
-            Aikidossa korostetaan sekä henkisen että fyysisen kehityksen tärkeyttä. Harjoittelijat pyrkivät kehittämään itseään
-            kokonaisvaltaisesti, mukaan lukien kehon hallinta, tasapaino ja keskittyminen.
-          </p>
-        </div>
-      </div>
-    </div>
-    <br>
-    <div class="taitaja">
-      <summary class="yhteenveto">
-        <h4>Yhteenveto</h4>
-          <p> 
-              Vaikka Ki-aikido ja Aikido jakavat saman juuren ja perustuvat vastustajan voiman ohjaamiseen sekä rauhanomaiseen konfliktien
-              ratkaisuun, Ki-aikido keskittyy erityisesti ki-energian hallintaan ja sen soveltamiseen harjoittelussa. Aikidossa on enemmän
-              monimuotoisia tekniikoita ja perinteinen lähestymistapa harjoitteluun. Jokainen harjoittelija voi valita sen, mikä heille
-              sopii parhaiten, ja molemmilla Aikidon muodoilla on arvokkaita opetuksia ja etuja.
-          </p>
-      </summary>
-    </div>
-    <br>
-    <footer>
-      <p class="footer"> Huom! Tämän on kokeellinen sivusto, jonka sisältö ja kuvat on toteutettu pääasiassa tekoälyn avulla. Suhtauduthan varauksella
-        esitettyyn tietoon. Sivuston linkeistä pääset luotettavampiin lähteisiin.
-      </p>
-      <p class="footer"> &copy; Wellu, 2023</p>
-    </footer>
-  </body>
+          <p class="footer"> &copy; Wellu, 2023</p>
+        </footer>
+    </body>
 </html>

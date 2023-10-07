@@ -1,82 +1,88 @@
 <!DOCTYPE html>
 <html lang="fi-fi">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--To make sure mobile phones etc can read the page properly-->
-        <meta name="description" content="Kuvakartta">
-        <meta name="keywords" content="aikido, ki aikido, Shin Shin Toitsu, kuvakartta">
-        <meta name="author" content="Wellu">
-        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-        <link rel="stylesheet" href="styles.css">
-        <title>Kuvakartta</title>
-    </head>
+  <head>
+    <meta charset="UTF-8">
+    <!--Responsiivisuuden ensi askel: sivut toimimaan myös tableteissa ja kännyköissä-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kuvakartta">
+    <meta name="keywords" content="aikido, ki aikido, Shin Shin Toitsu, kuvakartta">
+    <meta name="author" content="Wellu">
+    <!--Kiva pikku ikoni selaimen välilehdelle-->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <title>Kuvakartta</title>
+  </head>
     <body>
-        <nav>
-            <ul>
-                <li><a class="nav" href="index.html"><img src="Ki_pieni.png" alt="Ki navigointi" width="100%" height="52" title="Pääsivu"></a></li>
-                <li><a class="nav" href="#"><img src="logo_aikido.png" alt="Aikidon suuntaukset ja Ki" width="auto" height="52"></a>
-                  <ul aria-label="submenu"> <!--Saavutettavuuden avuksi, että esim. tekstin ääneenlukija tunnistaa valikon!-->
-                    <li><a class="nav" href="erot.html">Ki-Aikidon ja Aikidon erot</a></li>
-                    <li><a class="nav" href="suuntaukset.html">Aikidon suuntaukset</a></li>
-                    <li><a class="nav" href="suuntaukset.html#aikikai">*Aikikai</a></li>
-                    <li><a class="nav" href="suuntaukset.html#yoshinkai">*Yoshinkai</a></li>
-                    <li><a class="nav" href="suuntaukset.html#iwama">*Iwama-Ryu</a></li>
-                    <li><a class="nav" href="suuntaukset.html#kiaikido">*Ki-Aikido</a></li>
-                    <li><a class="nav" href="suuntaukset.html#shodokan">*Shodokan</a></li>
-                    <li><a class="nav" href="suuntaukset.html#kokikai">*Kokikai</a></li>
-                    <li><a class="nav" href="ki.html">Mikä/mitä on Ki?</a></li>
-                  </ul>
-                </li>
-                <li><a class="nav" href="#"><img src="logo_japanilaiset.png" alt="Ihmiset" width="100%" height="52"></a>
-                  <ul aria-label="submenu"> <!--Saavutettavuuden avuksi, että esim. tekstin ääneenlukija tunnistaa valikon!-->
-                    <li><a class="nav" href="taitajat.html">Henkilöesittelyt</a></li>
-                    <li><a class="nav" href="taitajat.html#tohei">*Koichi Tohei</a></li>
-                    <li><a class="nav" href="taitajat.html#ueshiba">*Morihei Ueshiba</a></li>
-                    <li><a class="nav" href="taitajat.html#kueshiba">*Kisshomaru Ueshiba</a></li>
-                    <li><a class="nav" href="taitajat.html#gozo">*Gozo Shioda</a></li>
-                    <li><a class="nav" href="taitajat.html#tomiki">*Kenji Tomiki</a></li>
-                    <li><a class="nav" href="taitajat.html#saito">*Morihiro Saito</a></li>
-                    <li><a class="nav" href="taitajat.html#varis">*Rainer Varis</a></li>
-                    <li><a class="nav" href="taitajat.html#koli">*Henkka Koli</a></li>
-                  </ul>
-                </li>
-                <li><a class="nav" href="#"><img src="logo_historia.png" alt="Ki-Aikidon historia" width="100%" height="52"></a>
-                  <ul aria-label="submenu"> <!--Saavutettavuuden avuksi, että esim. tekstin ääneenlukija tunnistaa valikon!-->
-                    <li><a class="nav" href="historia.html">Ki-Aikidon historia</a></li>
-                    <li><a class="nav" href="historia.html#suomeen">*Aikamatka Suomeen</a></li>
-                    <li><a class="nav" href="historia.html#tulo">*Leviäminen Suomeen</a></li>
-                    <li><a class="nav" href="historia.html#jiujitsu">*Aikido ja Jiu-jitsu</a></li>
-                    <li><a class="nav" href="historia.html#toheikiss">*Ki-Aikidon erosta Aikidosta</a></li>
-                  </ul>
-                </li>
-                <li><a class="nav" href="#"><img src="logo_video.png" alt="Linkit ja videot" width="100%" height="52"></a>
-                  <ul aria-label="submenu"> <!--Saavutettavuuden avuksi, että esim. tekstin ääneenlukija tunnistaa valikon!-->
-                    <li><a class="nav" href="linkit.html">Linkkejä</a></li>
-                    <li><a class="nav" href="linkit.html#sisalto">*Sivuston sisällöstä...</a></li>
-                    <li><a class="nav" href="videot.html">Videoita</a></li>
-                    <li><a class="nav" href="kuvakartta.html">Kuvakartta</a></li>
-                  </ul>
-                </li>
+      <nav>
+        <ul>
+          <li><a class="nav" href="index.html"><img src="Ki_pieni.png" alt="Ki navigointi" width="100%" height="52" title="Pääsivu"></a></li>
+          <li><a class="nav" href="#"><img src="logo_aikido.png" alt="Aikidon suuntaukset ja Ki" width="auto" height="52"></a>
+            <ul aria-label="submenu"> <!--Saavutettavuuden avuksi, että esim. tekstin ääneenlukija tunnistaa valikon!-->
+              <li><a class="nav" href="erot.html">Ki-Aikidon ja Aikidon erot</a></li>
+              <li><a class="nav" href="suuntaukset.html">Aikidon suuntaukset</a></li>
+              <li><a class="nav" href="suuntaukset.html#aikikai">*Aikikai</a></li>
+              <li><a class="nav" href="suuntaukset.html#yoshinkai">*Yoshinkai</a></li>
+              <li><a class="nav" href="suuntaukset.html#iwama">*Iwama-Ryu</a></li>
+              <li><a class="nav" href="suuntaukset.html#kiaikido">*Ki-Aikido</a></li>
+              <li><a class="nav" href="suuntaukset.html#shodokan">*Shodokan</a></li>
+              <li><a class="nav" href="suuntaukset.html#kokikai">*Kokikai</a></li>
+              <li><a class="nav" href="ki.html">Mikä/mitä on Ki?</a></li>
             </ul>
-          </nav>
-    <h1>Kuvakartta</h1>
-      <div class="taitaja">
-        <img class="kartta" src="1940.png" usemap="#japani" alt="Kuvakartta">
-          <map name="japani">
-            <area shape="circle" coords="195,90,70" alt="Fuji-vuori" href="https://fi.wikipedia.org/wiki/Fuji_(vuori)"
-            target="_blank" title="Fuji-vuori">
-            <area shape="rect" coords="0,220,128,363" alt="Japanilainen arkkitehtuuri"
-            href="https://fi.wikipedia.org/wiki/Japanilainen_arkkitehtuuri" target="_blank" title="Japanilainen arkkitehtuuri">
-            <area shape="rect" coords="291,182,400,339" alt="Japanilainen arkkitehtuuri"
-            href="https://fi.wikipedia.org/wiki/Japanilainen_arkkitehtuuri" target="_blank" title="Japanilainen arkkitehtuuri">
-          </map>
-      </div>
-      <footer>
-        <p class="footer"> Huom! Tämän on kokeellinen sivusto, jonka sisältö ja kuvat on toteutettu pääasiassa tekoälyn avulla.
-           Suhtauduthan varauksella esitettyyn tietoon. Sivuston linkeistä pääset luotettavampiin lähteisiin.
-        </p>
-        <p class="footer"> &copy; Wellu, 2023</p>
-      </footer>
-</body>
+          </li>
+          <li><a class="nav" href="#"><img src="logo_japanilaiset.png" alt="Ihmiset" width="100%" height="52"></a>
+            <ul aria-label="submenu"> <!--Saavutettavuuden avuksi, että esim. tekstin ääneenlukija tunnistaa valikon!-->
+              <li><a class="nav" href="taitajat.html">Henkilöesittelyt</a></li>
+              <li><a class="nav" href="taitajat.html#tohei">*Koichi Tohei</a></li>
+              <li><a class="nav" href="taitajat.html#ueshiba">*Morihei Ueshiba</a></li>
+              <li><a class="nav" href="taitajat.html#kueshiba">*Kisshomaru Ueshiba</a></li>
+              <li><a class="nav" href="taitajat.html#gozo">*Gozo Shioda</a></li>
+              <li><a class="nav" href="taitajat.html#tomiki">*Kenji Tomiki</a></li>
+              <li><a class="nav" href="taitajat.html#saito">*Morihiro Saito</a></li>
+              <li><a class="nav" href="taitajat.html#varis">*Rainer Varis</a></li>
+              <li><a class="nav" href="taitajat.html#koli">*Henkka Koli</a></li>
+            </ul>
+          </li>
+          <li><a class="nav" href="#"><img src="logo_historia.png" alt="Ki-Aikidon historia" width="100%" height="52"></a>
+            <ul aria-label="submenu"> <!--Saavutettavuuden avuksi, että esim. tekstin ääneenlukija tunnistaa valikon!-->
+              <li><a class="nav" href="historia.html">Ki-Aikidon historia</a></li>
+              <li><a class="nav" href="historia.html#suomeen">*Aikamatka Suomeen</a></li>
+              <li><a class="nav" href="historia.html#tulo">*Leviäminen Suomeen</a></li>
+              <li><a class="nav" href="historia.html#jiujitsu">*Aikido ja Jiu-jitsu</a></li>
+              <li><a class="nav" href="historia.html#toheikiss">*Ki-Aikidon erosta Aikidosta</a></li>
+            </ul>
+          </li>
+          <li><a class="nav" href="#"><img src="logo_video.png" alt="Linkit ja videot" width="100%" height="52"></a>
+            <ul aria-label="submenu"> <!--Saavutettavuuden avuksi, että esim. tekstin ääneenlukija tunnistaa valikon!-->
+              <li><a class="nav" href="linkit.html">Linkkejä</a></li>
+              <li><a class="nav" href="linkit.html#sisalto">*Sivuston sisällöstä...</a></li>
+              <li><a class="nav" href="videot.html">Videoita</a></li>
+              <li><a class="nav" href="kuvakartta.html">Kuvakartta</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+        <h1>Kuvakartta</h1>
+
+        <div class="taitaja">
+          <!--Kuvakarttakuva-->
+          <img class="kartta" src="1940.png" usemap="#japani" alt="Kuvakartta">
+          <!--Kuvakarttakuvan kartan määrittely-->
+            <map name="japani">
+              <area shape="circle" coords="195,90,70" alt="Fuji-vuori" href="https://fi.wikipedia.org/wiki/Fuji_(vuori)"
+                target="_blank" title="Fuji-vuori">
+              <area shape="rect" coords="0,220,128,363" alt="Japanilainen arkkitehtuuri"
+                href="https://fi.wikipedia.org/wiki/Japanilainen_arkkitehtuuri" target="_blank" title="Japanilainen arkkitehtuuri">
+              <area shape="rect" coords="291,182,400,339" alt="Japanilainen arkkitehtuuri"
+                href="https://fi.wikipedia.org/wiki/Japanilainen_arkkitehtuuri" target="_blank" title="Japanilainen arkkitehtuuri">
+            </map>
+        </div>
+
+        <footer>
+          <p class="footer"> Huom! Tämän on kokeellinen sivusto, jonka sisältö ja kuvat on toteutettu pääasiassa tekoälyn avulla.
+            Suhtauduthan varauksella esitettyyn tietoon. Sivuston linkeistä pääset luotettavampiin lähteisiin.
+          </p>
+          <p class="footer"> &copy; Wellu, 2023</p>
+        </footer>
+    </body>
 </html>

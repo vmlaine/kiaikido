@@ -1,360 +1,372 @@
 <!DOCTYPE html>
 <html lang="fi-fi">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--To make sure mobile phones etc can read the page properly-->
-        <meta name="description" content="Ki-Aikodo -sivu">
-        <meta name="keywords" content="aikido, ki aikido, Shin Shin Toitsu, itsepuolustus, japanilainen, budo, Koichi Tohei,
-        Morihei Ueshiba, Kisshomaru Ueshiba, Gozo Shioda, Kenji Tomiki, Morihiro Saito, Rainer Varis, Henkka Koli">
-        <meta name="author" content="Wellu">
-        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-        <link rel="stylesheet" href="styles.css">
-        <title>Henkilöesittelyt</title>
-    </head>
+  <head>
+    <meta charset="UTF-8">
+    <!--Responsiivisuuden ensi askel: sivut toimimaan myös tableteissa ja kännyköissä-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ki-Aikodo -sivu">
+    <meta name="keywords" content="aikido, ki aikido, Shin Shin Toitsu, itsepuolustus, japanilainen, budo, Koichi Tohei,
+      Morihei Ueshiba, Kisshomaru Ueshiba, Gozo Shioda, Kenji Tomiki, Morihiro Saito, Rainer Varis, Henkka Koli">
+    <meta name="author" content="Wellu">
+    <!--Kiva pikku ikoni selaimen välilehdelle-->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <title>Henkilöesittelyt</title>
+  </head>
     <body>
-        <nav>
-            <ul>
-                <li><a class="nav" href="index.html"><img src="Ki_pieni.png" alt="Ki navigointi" width="100%" height="52" title="Pääsivu"></a></li>
-                <li><a class="nav" href="#"><img src="logo_aikido.png" alt="Aikidon suuntaukset ja Ki" width="auto" height="52"></a>
-                  <ul aria-label="submenu"> <!--Saavutettavuuden avuksi, että esim. tekstin ääneenlukija tunnistaa valikon!-->
-                    <li><a class="nav" href="erot.html">Ki-Aikidon ja Aikidon erot</a></li>
-                    <li><a class="nav" href="suuntaukset.html">Aikidon suuntaukset</a></li>
-                    <li><a class="nav" href="suuntaukset.html#aikikai">*Aikikai</a></li>
-                    <li><a class="nav" href="suuntaukset.html#yoshinkai">*Yoshinkai</a></li>
-                    <li><a class="nav" href="suuntaukset.html#iwama">*Iwama-Ryu</a></li>
-                    <li><a class="nav" href="suuntaukset.html#kiaikido">*Ki-Aikido</a></li>
-                    <li><a class="nav" href="suuntaukset.html#shodokan">*Shodokan</a></li>
-                    <li><a class="nav" href="suuntaukset.html#kokikai">*Kokikai</a></li>
-                    <li><a class="nav" href="ki.html">Mikä/mitä on Ki?</a></li>
-                  </ul>
-                </li>
-                <li><a class="nav" href="#"><img src="logo_japanilaiset.png" alt="Ihmiset" width="100%" height="52"></a>
-                  <ul aria-label="submenu"> <!--Saavutettavuuden avuksi, että esim. tekstin ääneenlukija tunnistaa valikon!-->
-                    <li><a class="nav" href="taitajat.html">Henkilöesittelyt</a></li>
-                    <li><a class="nav" href="taitajat.html#tohei">*Koichi Tohei</a></li>
-                    <li><a class="nav" href="taitajat.html#ueshiba">*Morihei Ueshiba</a></li>
-                    <li><a class="nav" href="taitajat.html#kueshiba">*Kisshomaru Ueshiba</a></li>
-                    <li><a class="nav" href="taitajat.html#gozo">*Gozo Shioda</a></li>
-                    <li><a class="nav" href="taitajat.html#tomiki">*Kenji Tomiki</a></li>
-                    <li><a class="nav" href="taitajat.html#saito">*Morihiro Saito</a></li>
-                    <li><a class="nav" href="taitajat.html#varis">*Rainer Varis</a></li>
-                    <li><a class="nav" href="taitajat.html#koli">*Henkka Koli</a></li>
-                  </ul>
-                </li>
-                <li><a class="nav" href="#"><img src="logo_historia.png" alt="Ki-Aikidon historia" width="100%" height="52"></a>
-                  <ul aria-label="submenu"> <!--Saavutettavuuden avuksi, että esim. tekstin ääneenlukija tunnistaa valikon!-->
-                    <li><a class="nav" href="historia.html">Ki-Aikidon historia</a></li>
-                    <li><a class="nav" href="historia.html#suomeen">*Aikamatka Suomeen</a></li>
-                    <li><a class="nav" href="historia.html#tulo">*Leviäminen Suomeen</a></li>
-                    <li><a class="nav" href="historia.html#jiujitsu">*Aikido ja Jiu-jitsu</a></li>
-                    <li><a class="nav" href="historia.html#toheikiss">*Ki-Aikidon erosta Aikidosta</a></li>
-                  </ul>
-                </li>
-                <li><a class="nav" href="#"><img src="logo_video.png" alt="Linkit ja videot" width="100%" height="52"></a>
-                  <ul aria-label="submenu"> <!--Saavutettavuuden avuksi, että esim. tekstin ääneenlukija tunnistaa valikon!-->
-                    <li><a class="nav" href="linkit.html">Linkkejä</a></li>
-                    <li><a class="nav" href="linkit.html#sisalto">*Sivuston sisällöstä...</a></li>
-                    <li><a class="nav" href="videot.html">Videoita</a></li>
-                    <li><a class="nav" href="kuvakartta.html">Kuvakartta</a></li>
-                  </ul>
-                </li>
+      <nav>
+        <ul>
+          <li><a class="nav" href="index.html"><img src="Ki_pieni.png" alt="Ki navigointi" width="100%" height="52" title="Pääsivu"></a></li>
+          <li><a class="nav" href="#"><img src="logo_aikido.png" alt="Aikidon suuntaukset ja Ki" width="auto" height="52"></a>
+            <ul aria-label="submenu"> <!--Saavutettavuuden avuksi, että esim. tekstin ääneenlukija tunnistaa valikon!-->
+              <li><a class="nav" href="erot.html">Ki-Aikidon ja Aikidon erot</a></li>
+              <li><a class="nav" href="suuntaukset.html">Aikidon suuntaukset</a></li>
+              <li><a class="nav" href="suuntaukset.html#aikikai">*Aikikai</a></li>
+              <li><a class="nav" href="suuntaukset.html#yoshinkai">*Yoshinkai</a></li>
+              <li><a class="nav" href="suuntaukset.html#iwama">*Iwama-Ryu</a></li>
+              <li><a class="nav" href="suuntaukset.html#kiaikido">*Ki-Aikido</a></li>
+              <li><a class="nav" href="suuntaukset.html#shodokan">*Shodokan</a></li>
+              <li><a class="nav" href="suuntaukset.html#kokikai">*Kokikai</a></li>
+              <li><a class="nav" href="ki.html">Mikä/mitä on Ki?</a></li>
             </ul>
-          </nav>
-    <h1 id="tohei">Henkilöesittelyt</h1>
-    <div class="taitaja">
-      <div class="taitajagrid">
-        <div class="taitaja-item1">
-          <img class="taitaja" src="tohei_ai01.png" alt="Koichi Tohei" title="Koichi Tohei Sensei">
-        </div>
-        <div class="taitaja-item2">
-          <h2>Koichi Tohei</h2>
-            <p> Koichi Tohei (1920–2011) oli japanilainen itsepuolustuslajien taitaja, joka tunnetaan erityisesti Aikidon edistämisestä ja
-                Ki-Aikidon perustamisesta. Hän oli merkittävä hahmo Aikido-maailmassa ja edisti lajin leviämistä eri puolille maailmaa.
+          </li>
+          <li><a class="nav" href="#"><img src="logo_japanilaiset.png" alt="Ihmiset" width="100%" height="52"></a>
+            <ul aria-label="submenu"> <!--Saavutettavuuden avuksi, että esim. tekstin ääneenlukija tunnistaa valikon!-->
+              <li><a class="nav" href="taitajat.html">Henkilöesittelyt</a></li>
+              <li><a class="nav" href="taitajat.html#tohei">*Koichi Tohei</a></li>
+              <li><a class="nav" href="taitajat.html#ueshiba">*Morihei Ueshiba</a></li>
+              <li><a class="nav" href="taitajat.html#kueshiba">*Kisshomaru Ueshiba</a></li>
+              <li><a class="nav" href="taitajat.html#gozo">*Gozo Shioda</a></li>
+              <li><a class="nav" href="taitajat.html#tomiki">*Kenji Tomiki</a></li>
+              <li><a class="nav" href="taitajat.html#saito">*Morihiro Saito</a></li>
+              <li><a class="nav" href="taitajat.html#varis">*Rainer Varis</a></li>
+              <li><a class="nav" href="taitajat.html#koli">*Henkka Koli</a></li>
+            </ul>
+          </li>
+          <li><a class="nav" href="#"><img src="logo_historia.png" alt="Ki-Aikidon historia" width="100%" height="52"></a>
+            <ul aria-label="submenu"> <!--Saavutettavuuden avuksi, että esim. tekstin ääneenlukija tunnistaa valikon!-->
+              <li><a class="nav" href="historia.html">Ki-Aikidon historia</a></li>
+              <li><a class="nav" href="historia.html#suomeen">*Aikamatka Suomeen</a></li>
+              <li><a class="nav" href="historia.html#tulo">*Leviäminen Suomeen</a></li>
+              <li><a class="nav" href="historia.html#jiujitsu">*Aikido ja Jiu-jitsu</a></li>
+              <li><a class="nav" href="historia.html#toheikiss">*Ki-Aikidon erosta Aikidosta</a></li>
+            </ul>
+          </li>
+          <li><a class="nav" href="#"><img src="logo_video.png" alt="Linkit ja videot" width="100%" height="52"></a>
+            <ul aria-label="submenu"> <!--Saavutettavuuden avuksi, että esim. tekstin ääneenlukija tunnistaa valikon!-->
+              <li><a class="nav" href="linkit.html">Linkkejä</a></li>
+              <li><a class="nav" href="linkit.html#sisalto">*Sivuston sisällöstä...</a></li>
+              <li><a class="nav" href="videot.html">Videoita</a></li>
+              <li><a class="nav" href="kuvakartta.html">Kuvakartta</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+        <h1 id="tohei">Henkilöesittelyt</h1>
+
+        <div class="taitaja">
+          <div class="taitajagrid">
+            <div class="taitaja-item1">
+              <img class="taitaja" src="tohei_ai01.png" alt="Koichi Tohei" title="Koichi Tohei Sensei">
+            </div>
+          <div class="taitaja-item2">
+            <h2>Koichi Tohei</h2>
+            <p> Koichi Tohei &#40;1920–2011&#41; oli japanilainen itsepuolustuslajien taitaja, joka tunnetaan erityisesti
+                <a href="suuntaukset.html#aikido>"><strong>Aikido</strong></a>n edistämisestä ja
+                <a href="suuntaukset.html#kiaikido"><strong>Ki-Aikido</strong></a>n perustamisesta. Hän oli merkittävä hahmo
+                Aikido-maailmassa ja edisti lajin leviämistä eri puolille maailmaa.
             </p>
-            <p> Koichi Tohei aloitti Aikidon harjoittelunsa Aikidon perustaja Morihei Ueshiban johdolla. Hän nousi nopeasti merkittäviin
-                asemiin Aikidon hierarkiassa ja tuli yhdeksi Ueshiban lähimmistä oppilaista. Tohei oli tunnettu kyvystään selittää ja opettaa
-                Aikidon periaatteita selkeästi ja jäsennellysti.
+            <p> Koichi Tohei aloitti Aikidon harjoittelunsa Aikidon perustaja <a href="#ueshiba"><strong>Morihei Ueshiba</strong></a>n
+                johdolla. Hän nousi nopeasti merkittäviin asemiin Aikidon hierarkiassa ja tuli yhdeksi Ueshiban lähimmistä oppilaista.
+                Tohei oli tunnettu kyvystään selittää ja opettaa Aikidon periaatteita selkeästi ja jäsennellysti.
             </p>
-            <p> Tohei tunnetaan myös Ki-Aikidon luojana. Ki-Aikido korostaa ki-energian (henkisen energian) roolia Aikidon harjoittelussa.
-                Ki-Aikidossa keskitytään voimakkaasti ki-energian hallintaan ja sen käyttämiseen liikkeiden suorittamisessa. Tämä erottaa
-                sen perinteisestä Aikidosta, joka painottaa enemmän tekniikan suorittamista ja vastustajan voiman ohjaamista.
+            <p> Tohei tunnetaan myös Ki-Aikidon luojana. Ki-Aikido korostaa ki-energian &#40;henkisen energian&#41; roolia Aikidon
+                harjoittelussa. Ki-Aikidossa keskitytään voimakkaasti <a href="ki.html">ki-energian</a> hallintaan ja sen käyttämiseen
+                liikkeiden suorittamisessa. Tämä erottaa sen perinteisestä Aikidosta, joka painottaa enemmän tekniikan suorittamista ja
+                vastustajan voiman ohjaamista.
             </p>
-            <p id="ueshiba"> Koichi Tohei toimi aktiivisesti Aikidon ja Ki-Aikidon opettajana ja edistäjänä eri puolilla maailmaa. Hänen työnsä auttoi
-                Aikidon leviämisessä Japanin ulkopuolelle ja vaikutti merkittävästi lajin kehitykseen. Tohei perusti myös oman martiaalisen
-                organisaationsa, Ki Society (Shin Shin Toitsu Aikido), joka on omistautunut Ki-aikidon ja henkisen kehityksen opettamiseen.
-                Hänen perintönsä elää edelleen Aikido-yhteisössä.
+            <p id="ueshiba">
+                Koichi Tohei toimi aktiivisesti Aikidon ja Ki-Aikidon opettajana ja edistäjänä eri puolilla maailmaa. Hänen
+                työnsä auttoi Aikidon leviämisessä Japanin ulkopuolelle ja vaikutti merkittävästi lajin kehitykseen. Tohei perusti myös
+                oman budo-organisaationsa, Ki Society &#40;Shin Shin Toitsu Aikido&#41;, joka on omistautunut Ki-aikidon ja henkisen
+                kehityksen opettamiseen. Hänen perintönsä elää edelleen Aikido-yhteisössä.
             </p>
+          </div>
         </div>
       </div>
-    </div>
-    <br>
-    <div class="taitaja">
-      <div class="taitajagrid">
-        <div class="taitaja-item1">
-          <img class="taitaja" src="ueshiba_ai01.png" alt="Morihei Ueshiba" title="Morihei Ueshiba O-Sensei">
-        </div>
-        <div class="taitaja-item2">
-          <h2>Morihei Ueshiba</h2>
-          <p> Morihei Ueshiba (1883-1969) oli japanilaisen Aikido-itsepuolustuslajin perustaja ja merkittävä hahmo Japanin
-              itsepuolustuslajien historiassa. Hänet tunnetaan myös nimellä O-Sensei, mikä tarkoittaa suurta opettajaa.
-          </p>
-          <p> Morihei Ueshiba syntyi Tanabe-nimisessä kaupungissa Japanissa ja hänellä oli monipuolinen tausta eri martiaalilajeissa,
-              kuten jiu-jitsussa, miekkailussa ja aikijutsussa. Hänen elämänsä kääntyi kuitenkin uuteen suuntaan, kun hän alkoi kehittää
-              omaa taistelutaidon filosofiaansa, joka korosti rauhaa ja harmoniaa sekä vastustajan voiman ohjaamista sen sijaan, että
-              siihen vastattaisiin väkivallalla.
-          </p>
-          <p> Morihei Ueshiba perusti Aikidon, joka on japanilainen itsepuolustuslaji ja taistelutaidon muoto, joka painottaa liikkumisen,
-              tasapainon ja harmonian merkitystä. Aikido eroaa monista muista itsepuolustuslajeista siinä, että sen tarkoituksena ei ole
-              vahingoittaa vastustajaa, vaan rauhoittaa tilanne ja hallita konfliktia ilman väkivaltaa. Aikido perustuu liikkeiden
-             sulavuuteen ja vastustajan voiman hyödyntämiseen häntä itseään vastaan.
-          </p>
-          <p id="kueshiba"> O-Sensei Morihei Ueshiba opetti Aikidoa ja sen periaatteita monille oppilaille ja vaikutti suuresti lajin leviämiseen Japanin
-             ulkopuolelle. Hänen filosofiansa ja opetukset ovat edelleen keskeisiä Aikidon harjoittelussa, ja laji on levinnyt ympäri
-             maailmaa. Morihei Ueshiba kuoli vuonna 1969, mutta hänen perintönsä elää vahvasti Aikido-yhteisössä.
-          </p>
-        </div>
-      </div>
-    </div>
-    <br>
-    <div class="taitaja">
-      <div class="taitajagrid">
-        <div class="taitaja-item1">
-          <img class="taitaja" src="kueshiba_ai01.png" alt="Kisshomaru Ueshiba" title="Kisshomaru Ueshiba Sensei">
-        </div>
-        <div class="taitaja-item2">
-          <h2>Kisshomaru Ueshiba</h2>
-          <p> Kisshomaru Ueshiba (1921–1999) oli japanilainen taistelulajien mestari ja Aikidon opettaja. Hän oli Aikidon perustajan,
-              Morihei Ueshiban, poika ja seuraaja sekä merkittävä hahmo Aikidon historiassa.
-          </p>
-          <h4>Tässä muutamia tietoja Kisshomaru Ueshibasta:</h4>
-          <p>
-              <strong>Isänsä perintö:</strong> Kisshomaru Ueshiba syntyi Aikidon perustajan Morihei Ueshiban poikana, ja hän kasvoi ympäristössä,
-              jossa Aikido oli keskeinen osa perhettä ja elämää.
-          </p>
-          <p>  
-              <strong>Aikidon jatkaja:</strong> Morihei Ueshiba valitsi Kisshomarun Aikidon jatkajaksi ja opetti hänelle perusteellisesti Aikidon
-              tekniikat ja periaatteet.
-          </p>
-          <p>   
-              <strong>Aikikai-säätiön perustaminen:</strong> Kisshomaru Ueshiba perusti Aikikai-säätiön isänsä opetusten ja Aikidon edistämiseksi.
-              Aikikai-säätiö on yksi Aikidon keskeisistä organisaatioista, ja se on vastuussa Aikidon kehittämisestä ja levittämisestä
-              maailmanlaajuisesti.
-          </p>
-          <p>   
-              <strong>Kirjallinen panos:</strong> Kisshomaru Ueshiba kirjoitti useita kirjoja Aikidosta ja hänen isänsä opetuksista. Hänen
-              kirjoituksensa auttoivat selittämään Aikidon periaatteita ja tekniikoita lajin harjoittelijoille.
-          </p>
-          <p>   
-              <strong>Kansainvälinen levitys:</strong> Kisshomaru Ueshiba teki opetusmatkoja ulkomaille edistääkseen Aikidoa maailmanlaajuisesti.
-              Hän oli mukana Aikidon leviämisessä ja tunnetuksi tulemisessa monissa maissa.
-          </p>
-          <p id="gozo"> 
-              Kisshomaru Ueshiba jatkoi isänsä työtä Aikidon edistämiseksi ja kehittämiseksi. Hänestä tuli Aikidon tunnettu ja arvostettu
-              johtaja, ja hänen panoksensa auttoi lajia kasvamaan ja leviämään ympäri maailmaa.
-          </p>
-          <a class="enempi" href="historia.html#toheikiss">Koichi Tohein ja Kisshomaru Ueshiban väleistä</a>
+
+      <br>
+
+      <div class="taitaja">
+        <div class="taitajagrid">
+          <div class="taitaja-item1">
+            <img class="taitaja" src="ueshiba_ai01.png" alt="Morihei Ueshiba" title="Morihei Ueshiba O-Sensei">
+          </div>
+          <div class="taitaja-item2">
+            <h2>Morihei Ueshiba</h2>
+            <p> Morihei Ueshiba &#40;1883-1969&#41; oli japanilaisen Aikido-itsepuolustuslajin perustaja ja merkittävä hahmo Japanin
+                itsepuolustuslajien historiassa. Hänet tunnetaan myös nimellä O-Sensei, mikä tarkoittaa suurta opettajaa.
+            </p>
+            <p> Morihei Ueshiba syntyi Tanabe-nimisessä kaupungissa Japanissa ja hänellä oli monipuolinen tausta eri martiaalilajeissa,
+                kuten jiu-jitsussa, miekkailussa ja aikijutsussa. Hänen elämänsä kääntyi kuitenkin uuteen suuntaan, kun hän alkoi kehittää
+                omaa taistelutaidon filosofiaansa, joka korosti rauhaa ja harmoniaa sekä vastustajan voiman ohjaamista sen sijaan, että
+                siihen vastattaisiin väkivallalla.
+            </p>
+            <p> Morihei Ueshiba perusti Aikidon, joka on japanilainen itsepuolustuslaji ja taistelutaidon muoto, joka painottaa
+                liikkumisen, tasapainon ja harmonian merkitystä. Aikido eroaa monista muista itsepuolustuslajeista siinä, että sen
+                tarkoituksena ei ole vahingoittaa vastustajaa, vaan rauhoittaa tilanne ja hallita konfliktia ilman väkivaltaa. Aikido
+                perustuu liikkeiden sulavuuteen ja vastustajan voiman hyödyntämiseen häntä itseään vastaan.
+            </p>
+            <p id="kueshiba">
+                O-Sensei Morihei Ueshiba opetti Aikidoa ja sen periaatteita monille oppilaille ja vaikutti suuresti lajin
+                leviämiseen Japanin ulkopuolelle. Hänen filosofiansa ja opetukset ovat edelleen keskeisiä Aikidon harjoittelussa, ja
+                laji on levinnyt ympäri maailmaa. Morihei Ueshiba kuoli vuonna 1969, mutta hänen perintönsä elää vahvasti
+                Aikido-yhteisössä.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-    <br>
-    <div class="taitaja">
-      <div class="taitajagrid">
-        <div class="taitaja-item1">
-          <img class="taitaja" src="shioda_ai01.png" alt="Gozo Shioda" title="Gozo Shioda Sensei">
-        </div>
-        <div class="taitaja-item2">
-          <h2>Gozo Shioda</h2>
-          <p> Gozo Shioda (1915–1994) oli japanilainen taistelulajien mestari, joka tunnetaan erityisesti Yoshinkan Aikidon perustajana
-              ja kehittäjänä. Hän oli myös yksi Aikidon korkeimmista Dan-arvoista (10. dan).
-          </p>
-          <h4>Tässä muutamia merkittäviä tietoja Gozo Shiodasta:</h4>
-          <p>    
-              <strong>Aikidon varhaiset vaiheet:</strong> Gozo Shioda aloitti Aikidon harjoittelunsa isänsä, Yoshinkan Aikidon perustajan, Soke Gozo
-              Yoshidan opetuksen alla. Hän oli yksi Yoshinkan Aikidon ensimmäisistä oppilaista ja sai perusteellisen koulutuksen
-              Aikidon tekniikoista ja periaatteista.
-          </p>
-          <p>    
-              <strong>Yoshinkan Aikidon perustaminen:</strong> Gozo Shioda perusti Yoshinkan Aikidon oman lajiliiton ja dojon (harjoittelutila) vuonna
-              1955. Yoshinkan Aikido tunnetaan jäntevistä ja voimakkaista liikkeistään sekä tiukoista harjoittelumenetelmistään.
-          </p>
-          <p>   
-              <strong>Kansainvälinen vaikutus:</strong> Gozo Shioda ja Yoshinkan Aikido saivat nopeasti kansainvälistä tunnustusta, ja hän teki useita
-              opetusmatkoja eri puolille maailmaa edistääkseen lajia. Monet hänen oppilaistaan levittivät Yoshinkan Aikidoa laajalti.
-          </p>
-          <p>   
-              <strong>Kirjat ja opetus:</strong> Shioda kirjoitti useita kirjoja Aikidosta ja hänen harjoittelustaan. Hänen opetuksensa ja
-              kirjalliset teokset ovat olleet tärkeitä resursseja Aikidon opiskelijoille.
-          </p>
-          <p>   
-              <strong>10. dan-arvo:</strong> Gozo Shioda saavutti Aikidossa harvinaisen korkean 10. dan -arvon, joka myönnetään vain harvoille
-              ja kokeneille harjoittelijoille.
-          </p>
-          <p id="tomiki">   
-              Gozo Shioda vaikutti merkittävästi Aikidon leviämiseen ja kehitykseen ja jätti pysyvän jäljen Aikido-yhteisöön.
-              Yoshinkan Aikido jatkaa edelleen perinteenä ja koulutuksellisena lähestymistapana Aikidon harjoitteluun.
-          </p>
-        </div>
-      </div>
-    </div>
-    <br>
-    <div class="taitaja">
-      <div class="taitajagrid">
-        <div class="taitaja-item1">
-          <img class="taitaja" src="tomiki_ai01.png" alt="Kenji Tomiki" title="Kenji Tomiki Sensei">
-        </div>
-        <div class="taitaja-item2">
-          <h2>Kenji Tomiki</h2>
-          <p> 
-              Kenji Tomiki (1900–1979) oli japanilainen taistelulajien harjoittaja ja opettaja, joka tunnetaan erityisesti Aikido- ja
-              Judo-yhteisöissä. Hän oli Aikidon ja Judo-ryu Shindo Yoshin koulukunnan kehittäjä ja edisti yhdistettyä lähestymistapaa
-              taistelulajeihin, jossa yhdistyvät perinteiset tekniikat ja modernit opetusmenetelmät.
-          </p>
-         
-          <h4>Tässä muutamia tietoja Kenji Tomikista:</h4>
-          <p>    
-              <strong>Judo-opinnot:</strong> Kenji Tomiki aloitti Judo-harjoittelunsa nuorena ja tuli merkittäväksi hahmoksi Judo-yhteisössä. Hän sai
-              Judo-opetusta Jigoro Kanolta, Judo-lajin perustajalta.
-          </p>
-          <p> 
-              <strong>Aikido-opinnot:</strong> Tomiki opiskeli myös Aikidoa Aikidon perustajan Morihei Ueshiban johdolla. Hänen harjoittelunsa aikana
-              hän kehitti perustan sille, mitä myöhemmin tunnettiin Tomiki Aikidona.
-          </p>
-          <p>   
-              <strong>Tomiki Aikido:</strong> Kenji Tomiki kehitti oman Aikido-tyylinsä, joka tunnetaan nimellä &quot;Tomiki Aikido&quot;
-              tai &quot;Shodokan Aikido&quot;. Tämä tyyli sisälsi elementtejä sekä Aikidosta että Judosta ja korosti randori-nimellä
-              kulkevaa harjoittelumuotoa, joka on tarkoitettu useiden vastustajien samanaikaiseen hyökkäykseen.
-          </p>
-          <p>   
-              <strong>Yhdistetty lähestymistapa:</strong> Tomiki edisti ideaa, että Aikido ja Judo voivat täydentää toisiaan ja tarjota kokonaisvaltaisen
-              lähestymistavan taistelulajien harjoitteluun. Hän korosti liikkumisen ja tasapainon merkitystä.
-          </p>
-          <p> 
-              <strong>Opetus ja kirjallinen tuotanto:</strong> Kenji Tomiki opetti ja kirjoitti useita kirjoja Judoista ja Aikidosta sekä niiden
-              yhdistämisestä.
-          </p>
-          <p id="saito">    
-              Kenji Tomiki oli merkittävä hahmo taistelulajien maailmassa, ja hänen vaikutuksensa näkyy edelleen Tomiki Aikidon ja Judo
-              Shindo Yoshin koulukunnan harjoittelussa ja opetuksessa.
-          </p>
+
+      <br>
+
+      <div class="taitaja">
+        <div class="taitajagrid">
+          <div class="taitaja-item1">
+            <img class="taitaja" src="kueshiba_ai01.png" alt="Kisshomaru Ueshiba" title="Kisshomaru Ueshiba Sensei">
+          </div>
+          <div class="taitaja-item2">
+            <h2>Kisshomaru Ueshiba</h2>
+            <p> Kisshomaru Ueshiba &#40;1921–1999&#41; oli japanilainen taistelulajien mestari ja Aikidon opettaja. Hän oli Aikidon
+                perustajan, Morihei Ueshiban, poika ja seuraaja sekä merkittävä hahmo Aikidon historiassa.
+            </p>
+            <h4>Tässä muutamia tietoja Kisshomaru Ueshibasta:</h4>
+            <p> <strong>Isänsä perintö:</strong> Kisshomaru Ueshiba syntyi Aikidon perustajan Morihei Ueshiban poikana, ja hän kasvoi
+                ympäristössä, jossa Aikido oli keskeinen osa perhettä ja elämää.
+            </p>
+            <p> <strong>Aikidon jatkaja:</strong> Morihei Ueshiba valitsi Kisshomarun Aikidon jatkajaksi ja opetti hänelle
+                perusteellisesti Aikidon tekniikat ja periaatteet.
+            </p>
+            <p> <strong>Aikikai-säätiön perustaminen:</strong> Kisshomaru Ueshiba perusti Aikikai-säätiön isänsä opetusten ja Aikidon
+                edistämiseksi. Aikikai-säätiö on yksi Aikidon keskeisistä organisaatioista, ja se on vastuussa Aikidon kehittämisestä ja
+                levittämisestä maailmanlaajuisesti.
+            </p>
+            <p> <strong>Kirjallinen panos:</strong> Kisshomaru Ueshiba kirjoitti useita kirjoja Aikidosta ja hänen isänsä opetuksista.
+                Hänen kirjoituksensa auttoivat selittämään Aikidon periaatteita ja tekniikoita lajin harjoittelijoille.
+            </p>
+            <p> <strong>Kansainvälinen levitys:</strong> Kisshomaru Ueshiba teki opetusmatkoja ulkomaille edistääkseen Aikidoa
+                maailmanlaajuisesti.
+                Hän oli mukana Aikidon leviämisessä ja tunnetuksi tulemisessa monissa maissa.
+            </p>
+            <p id="gozo"> 
+                Kisshomaru Ueshiba jatkoi isänsä työtä Aikidon edistämiseksi ja kehittämiseksi. Hänestä tuli Aikidon tunnettu ja
+                arvostettu johtaja, ja hänen panoksensa auttoi lajia kasvamaan ja leviämään ympäri maailmaa.
+            </p>
+                <a class="enempi" href="historia.html#toheikiss">Koichi Tohein ja Kisshomaru Ueshiban väleistä</a>
+          </div>
         </div>
       </div>
-    </div>
-    <br>
-    <div class="taitaja">
-      <div class="taitajagrid">
-        <div class="taitaja-item1">
-          <img class="taitaja" src="saito_ai01.png" alt="Morihiro Saito" title="Morihiro Saito Sensei">
-        </div>
-        <div class="taitaja-item2">
-          <h2>Morihiro Saito</h2>
-          <p> 
-              Morihiro Saito (1928–2002) oli japanilainen taistelulajien mestari, joka tunnetaan erityisesti Aikidon harjoittelunsa ja
-              opetuksensa perinteisestä ja tarkasta luonteesta. Hän oli yksi Aikidon korkeimmista Dan-arvoista (9. dan) ja hänellä oli
-              suuri vaikutus Aikidon kehitykseen ja leviämiseen erityisesti Iwama-ryu Aikidon kautta.
-          </p>
-          <h4>Tässä muutamia tietoja Morihiro Saitosta:</h4>
-          <p>
-             <strong>Aikidon opetus Iwamassa:</strong> Morihiro Saito aloitti Aikidon harjoittelunsa ja opiskelunsa Aikidon perustaja Morihei
-              Ueshiban opetuksen alla. Hänestä tuli Ueshiban henkilökohtainen oppilas ja asui Iwama-kaupungissa, jossa hän harjoitteli
-             ja opiskeli Aikidoa lähes 24 vuotta Ueshiban opetuksen alla.
-          </p>
-          <p>
-              <strong>Iwama-ryu Aikido:</strong> Morihiro Saito kehitti oman Aikido-tyylinsä, joka tunnetaan nimellä &quot;Iwama-ryu Aikido.&quot;
-              Tämä tyyli painotti perinteisiä ja tarkkoja liikkeitä sekä aseiden käyttöä, kuten joa (puinen sauvat) ja ken (puinen miekka).
-              Iwama-ryu Aikidoa pidetään yhtenä Aikidon perinteisimmistä muodoista.
-          </p>
-          <p>
-              <strong>Opetusmatkat ja kirjalliset teokset:</strong> Morihiro Saito opetti Aikidoa ympäri maailmaa ja jakoi syvällistä tietoaan
-              Aikidosta. Hän kirjoitti myös useita kirjoja ja teki videoita, joissa hän selitti Aikidon periaatteita ja tekniikoita.
-          </p>
-          <p>
-              <strong>9. dan-arvo:</strong> Hän saavutti Aikidossa korkean 9. dan -arvon.
-          </p>
-          <p id="varis">
-              Morihiro Saito vaikutti merkittävästi Aikidon kehitykseen ja perinteen säilyttämiseen. Hänen opetuksensa ja Iwama-ryu
-              Aikido jatkavat edelleen vaikutustaan Aikido-yhteisössä ja tarjoavat mahdollisuuden syvälliseen ja perinteiseen Aikidon
-              harjoitteluun.
-          </p>
-        </div>
-      </div>
-    </div>
-    <br>
-    <div class="taitaja">
-      <div class="taitajagrid">
-        <div class="taitaja-item1">
-          <img class="taitaja" src="varis_ai02.png" alt="Rainer Varis" title="Rainer Varis Sensei">
-        </div>
-        <div class="taitaja-item2">
-          <h2>Rainer Varis</h2>
-          <p> Rainer Varis liittyy Ki-aikidon historiaan Suomessa merkittävänä hahmona, joka vaikutti lajin leviämiseen ja kehitykseen
-              Suomessa. Rainer Varis oli suomalainen Aikidon harjoittaja ja opettaja, joka oli yksi niistä, jotka toivat Ki-aikidon
-              Suomeen ja auttoivat sen juurtumisessa maahan.
-          </p>
-          <h4>Tässä on tiivistelmä Rainer Variksen roolista Ki-aikidon historiassa Suomessa:</h4>
-          <p> <strong>Japanin-opinnot:</strong> Rainer Varis opiskeli Japanissa Aikidoa ja Ki-aikidoa 1960-luvun lopulla ja 1970-luvun alussa. Hän oli
-              yksi niistä suomalaisista harjoittelijoista, jotka matkustivat Japaniin etsimään opetusta suoraan Tohein opetuksen alta.
-          </p>
-          <p> <strong>Ki-aikidon tuominen Suomeen:</strong> Rainer Varis palasi Japanista Suomeen omaksumaansa Ki-aikidon opetusta mukanaan. Hän alkoi
-              opettaa Ki-aikidoa ja jakaa Tohein opetuksia Suomessa.
-          </p>
-          <p> <strong>Organisaation perustaminen:</strong> Rainer Varis oli yksi niistä, jotka olivat mukana perustamassa Suomen Ki-aikidoliittoa vuonna
-              1971. Tämä organisaatio toimi Ki-aikidon edistämiseksi Suomessa ja auttoi sen leviämisessä.
-          </p>
-          <p> <strong>Ki-aikidon opettaminen ja edistäminen:</strong> Rainer Varis jatkoi Ki-aikidon opettamista ja edistämistä Suomessa, ja hänellä oli
-              merkittävä vaikutus lajin leviämiseen ja kasvuun maassa.
-          </p>
-          <p id="koli"> Rainer Varis oli tärkeä hahmo Ki-aikidon historiassa Suomessa, ja hänen panoksensa auttoi lajia vakiinnuttamaan asemansa
-              suomalaisessa Aikido-yhteisössä.
-          </p>
+
+      <br>
+
+      <div class="taitaja">
+        <div class="taitajagrid">
+          <div class="taitaja-item1">
+            <img class="taitaja" src="shioda_ai01.png" alt="Gozo Shioda" title="Gozo Shioda Sensei">
+          </div>
+          <div class="taitaja-item2">
+            <h2>Gozo Shioda</h2>
+            <p> Gozo Shioda &#40;1915–1994&#41; oli japanilainen taistelulajien mestari, joka tunnetaan erityisesti
+                <a href="suuntaukset.html#yoshinkan"><strong>Yoshinkan Aikido</strong></a>n perustajana ja kehittäjänä. Hän oli myös yksi
+                Aikidon korkeimmista Dan-arvoista (10. dan).
+            </p>
+            <h4>Tässä muutamia merkittäviä tietoja Gozo Shiodasta:</h4>
+            <p> <strong>Aikidon varhaiset vaiheet:</strong> Gozo Shioda aloitti Aikidon harjoittelunsa isänsä, Yoshinkan Aikidon
+                perustajan, Soke Gozo Yoshidan opetuksen alla. Hän oli yksi Yoshinkan Aikidon ensimmäisistä oppilaista ja sai
+                perusteellisen koulutuksen Aikidon tekniikoista ja periaatteista.
+            </p>
+            <p> <strong>Yoshinkan Aikidon perustaminen:</strong> Gozo Shioda perusti Yoshinkan Aikidon oman lajiliiton ja dojon
+                &#40;harjoittelutila&#41; vuonna 1955. Yoshinkan Aikido tunnetaan jäntevistä ja voimakkaista liikkeistään sekä tiukoista
+                harjoittelumenetelmistään.
+            </p>
+            <p> <strong>Kansainvälinen vaikutus:</strong> Gozo Shioda ja Yoshinkan Aikido saivat nopeasti kansainvälistä tunnustusta,
+                ja hän teki useita opetusmatkoja eri puolille maailmaa edistääkseen lajia. Monet hänen oppilaistaan levittivät Yoshinkan
+                Aikidoa laajalti.
+            </p>
+            <p> <strong>Kirjat ja opetus:</strong> Shioda kirjoitti useita kirjoja Aikidosta ja hänen harjoittelustaan. Hänen opetuksensa
+                ja kirjalliset teoksensa ovat olleet tärkeitä resursseja Aikidon opiskelijoille.
+            </p>
+            <p> <strong>10. dan-arvo:</strong> Gozo Shioda saavutti Aikidossa harvinaisen korkean 10. dan -arvon, joka myönnetään vain
+                harvoille ja kokeneille harjoittelijoille.
+            </p>
+            <p id="tomiki">   
+                Gozo Shioda vaikutti merkittävästi Aikidon leviämiseen ja kehitykseen ja jätti pysyvän jäljen Aikido-yhteisöön.
+                Yoshinkan Aikido jatkaa edelleen perinteenä ja koulutuksellisena lähestymistapana Aikidon harjoitteluun.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-    <br>
-    <div class="taitaja">
-      <div class="taitajagrid">
-        <div class="taitaja-item1">
-          <img class="taitaja" src="koli_ai01.png" alt="Henkka Koli" title="Henkka Koli?">
-        </div>
-        <div class="taitaja-item2">
-          <h2>Henkka Koli</h2>
-          <h4>Tottumattomasta harjoittelijasta Aikido-mestari Henkka Koliksi</h4>
-          <p> Kauan sitten erään pohjoismaisen metsän sydämessä eli nuori ja utelias mies nimeltä Henrik, tai kuten ystävät häntä pian
-              kutsuivat, Henkka. Henkka oli tavallinen nuori, jolla ei ollut aavistustakaan, mihin suuntaan elämä veisi hänet.
-          </p>
-          <p> Eräänä päivänä Henkka sattui kuulemaan tarinan mystisestä taistelutaidosta nimeltä Aikido. Tämä taistelulaji, joka
-              korosti harmoniaa ja liikkeen sulavuutta, herätti Henkan uteliaisuuden. Hän päätti lähteä tutkimaan Aikidoa ja sen
-              salaisuuksia.
-          </p>
-          <p> Henkka aloitti Aikidon harjoittelunsa paikallisessa dojossa. Aluksi hän oli kömpelö ja epävarma, mutta hän ei antanut
-              periksi. Hän harjoitteli ahkerasti ja uppoutui Aikidon maailmaan. Hän oppi perusteet liikkeiden sulavuudesta ja
-              energian ohjauksesta.
-          </p>
-          <p> Henkan intohimo Aikidoon kasvoi jatkuvasti, ja hän halusi oppia lisää. Hän päätti matkustaa Japaniin, Aikidon
-              synnyinmaahan, saadakseen opetusta suoraan mestareilta. Japanissa hän löysi opettajan, joka näytti hänelle tien
-              syvemmälle Aikidon salaisuuksiin.
-          </p>
-          <p> Vuodet kuluivat, ja Henkka palasi kotimaahansa Suomeen. Hän ei ollut enää se nuori utelias mies, joka oli aloittanut
-              matkansa, vaan nyt hän oli Aikido-mestari. Hänen taitonsa ja tiedonsa Aikidosta olivat vertaansa vailla.
-          </p>
-          <p> Henkka Koli, kuten häntä nyt kutsuttiin, oli paitsi Aikidon mestari myös opettaja. Hän jakoi intohimoisesti tietoaan
-              ja taitoaan Aikidosta niille, jotka halusivat oppia. Hänen dojonsa oli paikka, jossa oppilaat tulivat oppimaan
-              harmonian taitoa ja liikkeen sulavuutta.
-          </p>
-          <p> Henkan tarina on muistutus siitä, että intohimo ja omistautuminen voivat viedä meidät paikkoihin, joista emme
-              koskaan uneksineetkaan. Hän aloitti tavallisena nuorena miehenä, mutta hänen matkansa vei hänet Aikidon maailmaan,
-              ja hänestä tuli mestari, joka jakoi taitonsa ja viisautensa sukupolville, jotka halusivat oppia.
-          </p>
+
+      <br>
+
+      <div class="taitaja">
+        <div class="taitajagrid">
+          <div class="taitaja-item1">
+            <img class="taitaja" src="tomiki_ai01.png" alt="Kenji Tomiki" title="Kenji Tomiki Sensei">
+          </div>
+          <div class="taitaja-item2">
+            <h2>Kenji Tomiki</h2>
+            <p> 
+                Kenji Tomiki &#40;1900–1979&#41; oli japanilainen taistelulajien harjoittaja ja opettaja, joka tunnetaan erityisesti
+                Aikido- ja Judo-yhteisöissä. Hän oli Aikidon ja Judo-ryu Shindo Yoshin koulukunnan kehittäjä ja edisti yhdistettyä
+                lähestymistapaa taistelulajeihin, jossa yhdistyvät perinteiset tekniikat ja modernit opetusmenetelmät.
+            </p>
+            <h4>Tässä muutamia tietoja Kenji Tomikista:</h4>
+            <p> <strong>Judo-opinnot:</strong> Kenji Tomiki aloitti Judo-harjoittelunsa nuorena ja tuli merkittäväksi hahmoksi
+                Judo-yhteisössä. Hän sai Judo-opetusta Jigoro Kanolta, Judo-lajin perustajalta.
+            </p>
+            <p> <strong>Aikido-opinnot:</strong> Tomiki opiskeli myös Aikidoa Aikidon perustajan Morihei Ueshiban johdolla. Hänen
+                harjoittelunsa aikana hän kehitti perustan sille, mitä myöhemmin tunnettiin
+                <a href="suuntaukset.html#shodokan"><strong>Tomiki Aikido</strong></a>na.
+            </p>
+            <p> <strong>Tomiki Aikido:</strong> Kenji Tomiki kehitti oman Aikido-tyylinsä, joka tunnetaan nimellä &quot;Tomiki
+                Aikido&quot; tai &quot;Shodokan Aikido&quot;. Tämä tyyli sisälsi elementtejä sekä Aikidosta että Judosta ja korosti
+                randori-nimellä kulkevaa harjoittelumuotoa, joka on tarkoitettu useiden vastustajien samanaikaiseen hyökkäykseen.
+            </p>
+            <p> <strong>Yhdistetty lähestymistapa:</strong> Tomiki edisti ideaa, että Aikido ja Judo voivat täydentää toisiaan ja tarjota
+                kokonaisvaltaisen lähestymistavan taistelulajien harjoitteluun. Hän korosti liikkumisen ja tasapainon merkitystä.
+            </p>
+            <p> <strong>Opetus ja kirjallinen tuotanto:</strong> Kenji Tomiki opetti ja kirjoitti useita kirjoja Judoista ja Aikidosta
+                sekä niiden yhdistämisestä.
+            </p>
+            <p id="saito">    
+                Kenji Tomiki oli merkittävä hahmo taistelulajien maailmassa, ja hänen vaikutuksensa näkyy edelleen Tomiki Aikidon ja Judo
+                Shindo Yoshin koulukunnan harjoittelussa ja opetuksessa.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-    <br>
-    <footer>
+
+      <br>
+
+      <div class="taitaja">
+        <div class="taitajagrid">
+          <div class="taitaja-item1">
+            <img class="taitaja" src="saito_ai01.png" alt="Morihiro Saito" title="Morihiro Saito Sensei">
+          </div>
+          <div class="taitaja-item2">
+            <h2>Morihiro Saito</h2>
+            <p> Morihiro Saito &#40;1928–2002&#41; oli japanilainen taistelulajien mestari, joka tunnetaan erityisesti Aikidon
+                harjoittelunsa ja opetuksensa perinteisestä ja tarkasta luonteesta. Hän oli yksi Aikidon korkeimmista Dan-arvoista
+                &#40;9. dan&#41; ja hänellä oli suuri vaikutus Aikidon kehitykseen ja leviämiseen erityisesti
+                <a href="suuntaukset.html#iwama"><strong>Iwama-ryu Aikido</strong></a>n kautta.
+            </p>
+            <h4>Tässä muutamia tietoja Morihiro Saitosta:</h4>
+            <p> <strong>Aikidon opetus Iwamassa:</strong> Morihiro Saito aloitti Aikidon harjoittelunsa ja opiskelunsa Aikidon perustaja
+                Morihei Ueshiban opetuksen alla. Hänestä tuli Ueshiban henkilökohtainen oppilas ja asui Iwama-kaupungissa, jossa hän
+                harjoitteli ja opiskeli Aikidoa lähes 24 vuotta Ueshiban opetuksen alla.
+            </p>
+            <p> <strong>Iwama-ryu Aikido:</strong> Morihiro Saito kehitti oman Aikido-tyylinsä, joka tunnetaan nimellä &quot;Iwama-ryu
+                Aikido.&quot; Tämä tyyli painotti perinteisiä ja tarkkoja liikkeitä sekä aseiden käyttöä, kuten joa &#40;puinen
+                sauvat&#41; ja ken &#40;puinen miekka&#41;. Iwama-ryu Aikidoa pidetään yhtenä Aikidon perinteisimmistä muodoista.
+            </p>
+            <p> <strong>Opetusmatkat ja kirjalliset teokset:</strong> Morihiro Saito opetti Aikidoa ympäri maailmaa ja jakoi syvällistä
+                tietoaan Aikidosta. Hän kirjoitti myös useita kirjoja ja teki videoita, joissa hän selitti Aikidon periaatteita ja
+                tekniikoita.
+            </p>
+            <p> <strong>9. dan-arvo:</strong> Hän saavutti Aikidossa korkean 9. dan -arvon.
+            </p>
+            <p id="varis">
+                Morihiro Saito vaikutti merkittävästi Aikidon kehitykseen ja perinteen säilyttämiseen. Hänen opetuksensa ja Iwama-ryu
+                Aikido jatkavat edelleen vaikutustaan Aikido-yhteisössä ja tarjoavat mahdollisuuden syvälliseen ja perinteiseen Aikidon
+                harjoitteluun.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="taitaja">
+        <div class="taitajagrid">
+          <div class="taitaja-item1">
+            <img class="taitaja" src="varis_ai02.png" alt="Rainer Varis" title="Rainer Varis Sensei">
+          </div>
+          <div class="taitaja-item2">
+            <h2>Rainer Varis</h2>
+            <p> Rainer Varis liittyy Ki-aikidon historiaan Suomessa merkittävänä hahmona, joka vaikutti lajin leviämiseen ja kehitykseen
+                Suomessa. Rainer Varis oli suomalainen Aikidon harjoittaja ja opettaja, joka oli yksi niistä, jotka toivat Ki-aikidon
+                Suomeen ja auttoivat sen juurtumisessa maahan.
+            </p>
+            <h4>Tässä on tiivistelmä Rainer Variksen roolista Ki-aikidon historiassa Suomessa:</h4>
+            <p> <strong>Japanin-opinnot:</strong> Rainer Varis opiskeli Japanissa Aikidoa ja Ki-aikidoa 1960-luvun lopulla ja 1970-luvun
+                alussa. Hän oli yksi niistä suomalaisista harjoittelijoista, jotka matkustivat Japaniin etsimään opetusta suoraan Tohein
+                opetuksen alta.
+            </p>
+            <p> <strong>Ki-aikidon tuominen Suomeen:</strong> Rainer Varis palasi Japanista Suomeen omaksumaansa Ki-aikidon opetusta
+                mukanaan. Hän alkoi opettaa Ki-aikidoa ja jakaa Tohein opetuksia Suomessa.
+            </p>
+            <p> <strong>Organisaation perustaminen:</strong> Rainer Varis oli yksi niistä, jotka olivat mukana perustamassa Suomen
+                Ki-aikidoliittoa vuonna 1971. Tämä organisaatio toimi Ki-aikidon edistämiseksi Suomessa ja auttoi sen leviämisessä.
+            </p>
+            <p> <strong>Ki-aikidon opettaminen ja edistäminen:</strong> Rainer Varis jatkoi Ki-aikidon opettamista ja edistämistä
+                Suomessa, ja hänellä oli merkittävä vaikutus lajin leviämiseen ja kasvuun maassa.
+            </p>
+            <p id="koli">
+                Rainer Varis oli tärkeä hahmo Ki-aikidon historiassa Suomessa, ja hänen panoksensa auttoi lajia vakiinnuttamaan
+                asemansa suomalaisessa Aikido-yhteisössä.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="taitaja">
+        <div class="taitajagrid">
+          <div class="taitaja-item1">
+            <img class="taitaja" src="koli_ai01.png" alt="Henkka Koli" title="Henkka Koli?">
+          </div>
+          <div class="taitaja-item2">
+            <h2>Henkka Koli</h2>
+            <h4>Tottumattomasta harjoittelijasta Ki-Aikido-mestari Henkka Koliksi</h4>
+            <p> Kauan sitten erään pohjoismaisen metsän sydämessä eli nuori ja utelias mies nimeltä Henrik, tai kuten ystävät häntä pian
+                kutsuivat, Henkka. Henkka oli tavallinen nuori, jolla ei ollut aavistustakaan, mihin suuntaan elämä veisi hänet.
+            </p>
+            <p> Eräänä päivänä Henkka sattui kuulemaan tarinan mystisestä taistelutaidosta nimeltä Aikido. Tämä taistelulaji, joka
+                korosti harmoniaa ja liikkeen sulavuutta, herätti Henkan uteliaisuuden. Hän päätti lähteä tutkimaan Aikidoa ja sen
+                salaisuuksia.
+            </p>
+            <p> Henkka aloitti Aikidon harjoittelunsa paikallisessa dojossa. Aluksi hän oli kömpelö ja epävarma, mutta hän ei antanut
+                periksi. Hän harjoitteli ahkerasti ja uppoutui Aikidon maailmaan. Hän oppi perusteet liikkeiden sulavuudesta ja
+                energian ohjauksesta.
+            </p>
+            <p> Henkan intohimo Aikidoon kasvoi jatkuvasti, ja hän halusi oppia lisää. Hän päätti matkustaa Japaniin, Aikidon
+                synnyinmaahan, saadakseen opetusta suoraan mestareilta. Japanissa hän löysi opettajan, joka näytti hänelle tien
+                syvemmälle Aikidon salaisuuksiin.
+            </p>
+            <p> Vuodet kuluivat, ja Henkka palasi kotimaahansa Suomeen. Hän ei ollut enää se nuori utelias mies, joka oli aloittanut
+                matkansa, vaan nyt hän oli Aikido-mestari. Hänen taitonsa ja tiedonsa Aikidosta olivat vertaansa vailla.
+            </p>
+            <p> Henkka Koli, kuten häntä nyt kutsuttiin, oli paitsi Aikidon mestari myös opettaja. Hän jakoi intohimoisesti tietoaan
+                ja taitoaan Aikidosta niille, jotka halusivat oppia. Hänen dojonsa oli paikka, jossa oppilaat tulivat oppimaan
+                harmonian taitoa ja liikkeen sulavuutta.
+            </p>
+            <p> Henkan tarina on muistutus siitä, että intohimo ja omistautuminen voivat viedä meidät paikkoihin, joista emme
+                koskaan uneksineetkaan. Hän aloitti tavallisena nuorena miehenä, mutta hänen matkansa vei hänet Aikidon maailmaan,
+                ja hänestä tuli mestari, joka jakoi taitonsa ja viisautensa sukupolville, jotka halusivat oppia.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <br>
+
+      <footer>
         <p class="footer"> Huom! Tämän on kokeellinen sivusto, jonka sisältö ja kuvat on toteutettu pääasiassa tekoälyn avulla. Suhtauduthan varauksella
           esitettyyn tietoon. Sivuston linkeistä pääset luotettavampiin lähteisiin.
         </p>
         <p class="footer"> &copy; Wellu, 2023</p>
       </footer>
     </body>
-    
 </html>
