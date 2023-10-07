@@ -179,7 +179,7 @@ div.linkit {
 }
 
 /* Yhteenvetolaatikon muotoilu */
-summary.yhteenveto {
+div.yhteenveto {
   border: solid;
   border-width: 3px;
   border-color: rgb(161, 174, 156);
@@ -195,7 +195,7 @@ summary.yhteenveto {
 }
 
 /* Sisällöntuottajat - osion muotoilu */
-summary.tuottajat {
+div.tuottajat {
   border: inherit;
   border-width: inherit;
   border-color: inherit;
